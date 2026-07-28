@@ -500,10 +500,10 @@ def main() -> int:
 
     topics = TOPICS_FILE.read_text(encoding="utf-8")
     style = STYLE_FILE.read_text(encoding="utf-8")
-    client = OpenAI(
-        max_retries=6,
-        timeout=600.0,
-    )
+client = OpenAI(
+    max_retries=2,
+    timeout=180.0,
+)
 
     try:
         print("Investigando actualidad y cargos vigentes...")
