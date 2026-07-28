@@ -1,5 +1,367 @@
 {
   "version": 1,
-  "updatedAt": null,
-  "exams": []
+  "updatedAt": "2026-07-28T12:19:55.935668+02:00",
+  "exams": [
+    {
+      "id": "001",
+      "title": "Examen 001",
+      "date": "2026-07-28",
+      "level": "Alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-07-28T12:19:55.935668+02:00",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "RTVE y legislación audiovisual",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "El 27/07/2026, durante su visita al Puesto de Mando Avanzado del incendio en La Vall d'Uixó (Castellón), ¿qué anunció el presidente del Gobierno, Pedro Sánchez?",
+          "options": [
+            "La movilización inmediata de la Unidad Militar de Emergencias (UME) con refuerzo de 2.000 efectivos.",
+            "La declaración del estado de alarma para zonas afectadas por incendios.",
+            "La aprobación de un decreto-ley urgente para reforestación.",
+            "Ayudas por 10 millones de euros para financiar refugios climáticos."
+          ],
+          "correctIndex": 3,
+          "explanation": "Según la cobertura del 27/07/2026 (El País / EFE), Pedro Sánchez anunció ayudas por 10 millones de euros destinadas a financiar refugios climáticos; las otras opciones no constan en la nota citada, que recoge la medida económica específica anunciada en el PMA.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "EL PAÍS / EFE — Cobertura de la visita y declaraciones (27/07/2026)",
+          "sourceUrl": "https://elpais.com/espana/2026-07-27/ultima-hora-de-los-incendios-forestales-en-espana-en-directo.html",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "¿Qué empresa fue multada por la Comisión Europea con 550 millones de euros el 27/07/2026 por incumplimientos del Digital Services Act, según la nota oficial del Ejecutivo comunitario?",
+          "options": [
+            "Amazon",
+            "AliExpress",
+            "Meta (Facebook/Instagram)",
+            "TikTok"
+          ],
+          "correctIndex": 1,
+          "explanation": "La nota oficial de la Comisión Europea del 27/07/2026 indica que la sanción de €550 millones se impuso a AliExpress por infracciones del DSA; las demás empresas mencionadas no son las sancionadas en ese comunicado.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "European Commission — 'Commission fines AliExpress €550 million for breaching the Digital Services Act'",
+          "sourceUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según la Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal, ¿qué instrumento previsto para RTVE tiene una vigencia de nueve años?",
+          "options": [
+            "El contrato‑programa",
+            "El mandato‑marco",
+            "El plan de igualdad",
+            "El código de autorregulación para menores"
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto consolidado de la Ley 17/2006 prevé el mandato‑marco con una vigencia de nueve años; el contrato‑programa es trienal y el resto son instrumentos diferentes citados en el temario pero no con vigencia de nueve años.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal",
+          "sourceUrl": "https://boe.es/buscar/act.php?id=BOE-A-2006-9958&p=20240802&tn=1",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente (verificado el 28/07/2026) la Presidencia de la Comisión Europea?",
+          "options": [
+            "Manfred Weber",
+            "Charles Michel",
+            "Christine Lagarde",
+            "Ursula von der Leyen"
+          ],
+          "correctIndex": 3,
+          "explanation": "La web institucional de la Comisión confirma que Ursula von der Leyen es la Presidenta de la Comisión Europea (mandato 2024‑2029); Charles Michel es presidente del Consejo Europeo en períodos anteriores, Christine Lagarde preside el BCE y Manfred Weber fue líder del PPE en el Parlamento.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "President von der Leyen | European Commission",
+          "sourceUrl": "https://commission.europa.eu/about/organisation/president_en",
+          "sourceDate": "2024-07"
+        },
+        {
+          "prompt": "¿Cuál fue la decisión del Banco Central Europeo publicada el 23/07/2026 sobre sus tipos de referencia?",
+          "options": [
+            "Elevar los tipos en 25 puntos básicos",
+            "Mantener los tipos sin cambios",
+            "Reducir los tipos en 25 puntos básicos",
+            "Anunciar un programa de compra de activos ampliado"
+          ],
+          "correctIndex": 1,
+          "explanation": "El comunicado oficial del BCE del 23/07/2026 indicó que los tipos de interés se mantuvieron sin cambios; no hay mención a una subida, bajada ni a una nueva expansión del programa de compras en esa nota.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "European Central Bank — Monetary policy statement (23/07/2026)",
+          "sourceUrl": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is260723~b6fadd48f4.en.html",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "En los avisos meteorológicos del 27‑28/07/2026, ¿qué organismo emitió alertas por altas temperaturas y riesgo extremo de incendios en varias comunidades autónomas españolas?",
+          "options": [
+            "AEMET (Agencia Estatal de Meteorología)",
+            "Protección Civil",
+            "Ministerio para la Transición Ecológica (MITECO)",
+            "Departamento de Seguridad Nacional (DSN)"
+          ],
+          "correctIndex": 0,
+          "explanation": "La Agencia Estatal de Meteorología (AEMET) emitió los avisos por altas temperaturas y riesgo extremo de incendios citados el 27‑28/07/2026; Protección Civil y MITECO aportan información operativa, pero la previsión meteorológica procede de AEMET.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "AEMET / EFE — avisos meteorológicos y cobertura (27‑28/07/2026)",
+          "sourceUrl": "https://www.aemet.es/es/eltiempo/prediccion/montana?p=peu1",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿cuál de las siguientes obligaciones figura expresamente como principio informativo?",
+          "options": [
+            "La separación entre información y opinión",
+            "La utilización obligatoria de pseudónimos para fuentes confidenciales",
+            "La difusión prioritaria de contenidos de pago",
+            "La eliminación sistemática de testimonios anónimos"
+          ],
+          "correctIndex": 0,
+          "explanation": "El Manual de Estilo de RTVE establece como principio la separación entre información y opinión; las otras opciones no forman parte de los principios del Manual tal y como se recoge en el documento institucional.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE — Corporación RTVE",
+          "sourceUrl": "https://manualdeestilo.rtve.es/crtve/",
+          "sourceDate": ""
+        },
+        {
+          "prompt": "El 27/07/2026 se informó de que el macrojuicio conocido como 'Operación Kitchen' había entrado en su fase final. ¿En qué órgano judicial se está celebrando este juicio?",
+          "options": [
+            "Tribunal Supremo",
+            "Audiencia Nacional",
+            "Tribunal Constitucional",
+            "Audiencia Provincial de Madrid"
+          ],
+          "correctIndex": 1,
+          "explanation": "La cobertura de agencias del 27/07/2026 indica que el macrojuicio 'Operación Kitchen' ha entrado en la fase final en la Audiencia Nacional; no se celebra en el Tribunal Supremo ni en el Constitucional, y no corresponde a una Audiencia Provincial.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "Heraldo / EFE — Información sobre el avance del juicio Kitchen (27/07/2026)",
+          "sourceUrl": "https://www.heraldo.es/nacional/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según la agencia EFE (23‑27 julio 2026), ¿por qué aplazó el Gobierno la aprobación del decreto de vivienda hasta septiembre?",
+          "options": [
+            "Por la llegada de un registro de firmas ciudadanas mayoritario",
+            "Por un dictamen negativo del Tribunal Constitucional",
+            "Porque el texto incumplía la normativa europea",
+            "Por falta de apoyos parlamentarios"
+          ],
+          "correctIndex": 3,
+          "explanation": "EFE informó que el Ejecutivo pospuso la aprobación del decreto de vivienda por falta de apoyos parlamentarios; no se mencionó en esa cobertura un dictamen constitucional, incumplimiento europeo ni un registro de firmas como causa del aplazamiento.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "politics",
+          "sourceTitle": "EFE — 'El Gobierno deja para septiembre la aprobación del decreto de vivienda'",
+          "sourceUrl": "https://www.heraldo.es/nacional/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "De acuerdo con la Ley 17/2006, ¿cuál es la duración típica prevista en la norma para un contrato‑programa entre el Gobierno y la Corporación RTVE?",
+          "options": [
+            "Cuatrienal (4 años)",
+            "Bienal (2 años)",
+            "Trienal (3 años)",
+            "Decenal (10 años)"
+          ],
+          "correctIndex": 2,
+          "explanation": "La Ley 17/2006 establece la figura del contrato‑programa con periodicidad trienal (tres años) como instrumento para definir objetivos y financiación; las demás duraciones no se ajustan al precepto citado.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal",
+          "sourceUrl": "https://boe.es/buscar/pdf/2006/BOE-A-2006-9958-consolidado.pdf",
+          "sourceDate": "2006-06-06"
+        },
+        {
+          "prompt": "¿Quién ocupa, según la verificación institucional del 28/07/2026, la Presidencia del Consejo Europeo (mandato citado en el dossier)?",
+          "options": [
+            "Pedro Sánchez",
+            "Charles Michel",
+            "António Costa",
+            "Ursula von der Leyen"
+          ],
+          "correctIndex": 2,
+          "explanation": "El Consilium confirma que António Costa fue designado presidente del Consejo Europeo con mandato indicado en el dossier (decisión a partir del 1/12/2024); Charles Michel fue presidente en el periodo anterior y Ursula von der Leyen preside la Comisión.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "António Costa, President of the European Council - Consilium",
+          "sourceUrl": "https://www.consilium.europa.eu/en/european-council/president/",
+          "sourceDate": "2024-12-01"
+        },
+        {
+          "prompt": "¿Cuál es la norma básica española que regula la Prevención de Riesgos Laborales, referida en el temario obligatorio?",
+          "options": [
+            "Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal",
+            "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+            "Real Decreto 4/2018, de 22 de junio",
+            "Ley 13/2022, de 7 de julio, General de Comunicación Audiovisual"
+          ],
+          "correctIndex": 1,
+          "explanation": "La Ley 31/1995 es la norma básica sobre prevención de riesgos laborales en España citada en el temario; las otras normas tratan de audiovisuales o procedimientos de designación del Consejo de RTVE.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE — Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "El 24/07/2026 el Consejo de la UE adoptó medidas restrictivas dirigidas a seis personas. ¿A qué país estaban vinculadas esas nuevas sanciones?",
+          "options": [
+            "Bielorrusia",
+            "Venezuela",
+            "Irán",
+            "Corea del Norte"
+          ],
+          "correctIndex": 2,
+          "explanation": "La nota oficial del Consilium del 24/07/2026 indica la ampliación de sanciones dirigidas a seis individuos por violaciones de derechos humanos en Irán; las demás opciones no corresponden a esa decisión concreta.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "politics",
+          "sourceTitle": "Consilium — 'Iran: Council sanctions an additional six individuals over serious human rights violations' (24/07/2026)",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2026/07/24/iran-council-sanctions-an-additional-six-individuals-over-serious-human-rights-violations/",
+          "sourceDate": "2026-07-24"
+        },
+        {
+          "prompt": "En julio de 2026 se produjo la investidura de un presidente autonómico que aparece en el dossier: ¿de qué comunidad autónoma se trata?",
+          "options": [
+            "Andalucía",
+            "Cataluña",
+            "Comunidad de Madrid",
+            "País Vasco"
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier recoge la investidura de Juanma Moreno como presidente de la Junta de Andalucía (julio de 2026); las otras comunidades mencionadas no corresponden a ese hecho recogido en la nota citada.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "politics",
+          "sourceTitle": "Junta de Andalucía — Nota de prensa / EFE",
+          "sourceUrl": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/217249/juanma/moreno/investido/presidente/junta/andalucia/xiii/legislatura?pag=1",
+          "sourceDate": "2026-07-02"
+        },
+        {
+          "prompt": "Según la cobertura del 27/07/2026, ¿qué figura pública lanzó la canción 'Sea como sea' y generó repercusión mediática?",
+          "options": [
+            "Aitana",
+            "Rosalía",
+            "Pablo Alborán",
+            "Ansu Fati"
+          ],
+          "correctIndex": 3,
+          "explanation": "El diario El País informó el 27/07/2026 sobre la incursión musical del futbolista Ansu Fati con la canción 'Sea como sea'; las otras artistas no están vinculadas a esa noticia específica.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "culture",
+          "sourceTitle": "EL PAÍS — 'Ansu Fati, del fútbol a la música como vía de escape' (27/07/2026)",
+          "sourceUrl": "https://elpais.com/hemeroteca/2026-07-27/3/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "El Manual de Estilo de RTVE incluye múltiples normas. ¿Cuál de las siguientes afirmaciones expresa correctamente una de sus obligaciones?",
+          "options": [
+            "Prohibir la publicación de rectificaciones por orden judicial",
+            "Priorizar siempre contenidos de entretenimiento frente a la información",
+            "Permitir la difusión de rumores no contrastados en secciones de opinión",
+            "Garantizar el pluralismo y la separación entre información y opinión"
+          ],
+          "correctIndex": 3,
+          "explanation": "El Manual de Estilo subraya la obligación de garantizar pluralismo y mantener la separación entre información y opinión; las otras afirmaciones contradicen los principios del Manual o son falsas respecto a su contenido.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE — Corporación RTVE",
+          "sourceUrl": "https://manualdeestilo.rtve.es/crtve/",
+          "sourceDate": ""
+        },
+        {
+          "prompt": "En el contexto de los hechos esenciales de los últimos cinco años, ¿qué suceso internacional de 24/02/2022 figura como factor central de la agenda europea de seguridad?",
+          "options": [
+            "La invasión a gran escala de Ucrania por la Federación Rusa",
+            "La firma de un tratado de libre comercio entre la UE y Mercosur",
+            "La oleada de protestas en Irán por cuestiones internas",
+            "La retirada definitiva de Estados Unidos de Afganistán"
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier recoge que el 24 de febrero de 2022 la Federación Rusa inició una invasión a gran escala de Ucrania, hecho que ha marcado la agenda de seguridad europea; las demás opciones no corresponden a ese acontecimiento señalado en la cronología de cinco años.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "United Nations — declaración y cobertura sobre la invasión (24/02/2022)",
+          "sourceUrl": "https://www.un.org/sg/en/content/highlight/2022-02-24.html",
+          "sourceDate": "2022-02-24"
+        },
+        {
+          "prompt": "Según los datos provisionales citados por EFE y MITECO actualizados a 27/07/2026, aproximadamente ¿qué superficie forestal había quedado afectada en España desde comienzos de 2026?",
+          "options": [
+            "17.239.600 hectáreas",
+            "1.723 hectáreas",
+            "172.396 hectáreas",
+            "72.396 hectáreas"
+          ],
+          "correctIndex": 2,
+          "explanation": "La nota de EFE del 27/07/2026 recoge la cifra provisional de 172.396,10 hectáreas afectadas en lo que va de 2026; las otras cifras no coinciden con el dato publicado por la agencia ni con los mapas de MITECO citados.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "EFE - 'La superficie quemada por los incendios en lo que va de año sube a 172.400 hectáreas'",
+          "sourceUrl": "https://efe.com/medio-ambiente/2026-07-27/hectareas-quemadas-espana-2026/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "¿Qué documento, aprobado el 23 de julio de 2010, regula en el temario de RTVE la defensa de los derechos del menor en los contenidos audiovisuales?",
+          "options": [
+            "Manual de Estilo de RTVE",
+            "Ley 17/2006 de la radio y la televisión de titularidad estatal",
+            "Código de Autorregulación para la Defensa de los Derechos del Menor (23/07/2010)",
+            "Plan de Igualdad 2022‑2026"
+          ],
+          "correctIndex": 2,
+          "explanation": "El temario recoge específicamente el 'Código de Autorregulación para la Defensa de los Derechos del Menor en los Contenidos Audiovisuales' de 23/07/2010; las otras opciones son documentos relevantes del temario pero no son el código de autorregulación citado.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Código de Autorregulación para la Defensa de los Derechos del Menor (temario)",
+          "sourceUrl": "https://boe.es/",
+          "sourceDate": "2010-07-23"
+        },
+        {
+          "prompt": "En el contexto europeo de los últimos cinco años, ¿qué iniciativa de marzo de 2025 presentó la Comisión para movilizar gasto e instrumentos financieros en defensa, citada en el dossier?",
+          "options": [
+            "ReArm Europe (Readiness 2030)",
+            "Green Deal for Defence",
+            "NextGen Defence Fund",
+            "European Security Compact 2025"
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier recoge que en marzo de 2025 la Comisión presentó el plan 'ReArm Europe' (Readiness 2030) para movilizar hasta aproximadamente €800.000 M en gasto en defensa; las otras denominaciones no corresponden al plan citado en la documentación oficial consultada.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "politics",
+          "sourceTitle": "European Commission / White Paper & related briefings (ReArm Europe / Readiness 2030)",
+          "sourceUrl": "https://commission.europa.eu/topics/defence/future-european-defence_en",
+          "sourceDate": "2025-03-04"
+        }
+      ]
+    }
+  ]
 }
