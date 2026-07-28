@@ -5,6 +5,7 @@ import os
 import random
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -128,8 +129,8 @@ def research_schema() -> dict[str, Any]:
             "asOf": {"type": "string"},
             "items": {
                 "type": "array",
-                "minItems": 34,
-                "maxItems": 48,
+                "minItems": 26,
+                "maxItems": 34,
                 "items": {
                     "type": "object",
                     "additionalProperties": False,
@@ -288,13 +289,13 @@ def unpack_questions(exam: dict[str, Any]) -> dict[str, Any]:
 
 def validate_research(dossier: dict[str, Any]) -> None:
     items = dossier.get("items")
-    if not isinstance(items, list) or len(items) < 34:
+    if not isinstance(items, list) or len(items) < 26:
         raise ValueError("La investigación no contiene suficientes hechos verificados.")
     valid_items = 0
     for item in items:
         if is_url(str(item.get("sourceUrl", ""))):
             valid_items += 1
-    if valid_items < 34:
+    if valid_items < 26:
         raise ValueError("La investigación contiene fuentes no válidas.")
 
 
@@ -413,23 +414,83 @@ def balance_answers(exam: dict[str, Any], seed: int) -> None:
         question["correctIndex"] = target
 
 
+
+def create_background_response(
+    client: OpenAI,
+    *,
+    label: str,
+    max_wait_seconds: int,
+    **request: Any,
+):
+    """Ejecuta una respuesta larga en background y consulta su estado."""
+    response = client.with_options(
+        timeout=60.0,
+        max_retries=2,
+    ).responses.create(
+        background=True,
+        store=True,
+        **request,
+    )
+
+    print(
+        f"{label}: respuesta {response.id} iniciada con estado {response.status}.",
+        flush=True,
+    )
+
+    deadline = time.monotonic() + max_wait_seconds
+
+    while response.status in {"queued", "in_progress"}:
+        if time.monotonic() >= deadline:
+            try:
+                client.responses.cancel(response.id)
+            except Exception:
+                pass
+
+            raise RuntimeError(
+                f"{label} superó el límite de "
+                f"{max_wait_seconds // 60} minutos."
+            )
+
+        time.sleep(10)
+
+        response = client.with_options(
+            timeout=60.0,
+            max_retries=2,
+        ).responses.retrieve(response.id)
+
+        print(
+            f"{label}: estado {response.status}.",
+            flush=True,
+        )
+
+    if response.status != "completed":
+        error = getattr(response, "error", None)
+        incomplete = getattr(response, "incomplete_details", None)
+        raise RuntimeError(
+            f"{label} terminó con estado {response.status}. "
+            f"Error: {error or incomplete or 'sin detalle'}"
+        )
+
+    return response
+
+
 def research_current_affairs(client: OpenAI, recent_questions: list[str]) -> dict[str, Any]:
     research_prompt = f"""
 Eres un editor jefe de actualidad que prepara un dossier verificado para una oposición de
 Información y Contenidos de RTVE. La fecha y hora de corte es {NOW.isoformat()} en Madrid.
 Debes utilizar búsqueda web antes de responder.
 
-Reúne entre 34 y 48 hechos candidatos, relevantes y preguntables:
-- Al menos 10 hechos de las últimas 72 horas.
-- Al menos 8 hechos de los últimos siete días.
-- Al menos 4 hechos relevantes del último mes.
+Reúne entre 26 y 34 hechos candidatos, relevantes y preguntables:
+- Al menos 8 hechos de las últimas 72 horas.
+- Al menos 6 hechos de los últimos siete días.
+- Al menos 3 hechos relevantes del último mes.
 - Al menos 4 cargos o presidencias vigentes verificados hoy: España, autonomías, UE u
   organismos internacionales.
-- Al menos 4 acontecimientos esenciales de los últimos cinco años que ayuden a comprender
+- Al menos 3 acontecimientos esenciales de los últimos cinco años que ayuden a comprender
   la agenda actual.
-- Al menos 8 hechos estáticos obtenidos de fuentes oficiales del temario: tres sobre RTVE o
+- Al menos 6 hechos estáticos obtenidos de fuentes oficiales del temario: dos sobre RTVE o
   legislación audiovisual; dos sobre Manual de Estilo, ética o igualdad; uno de prevención
-  de riesgos; y dos sobre Unión Europea o instituciones del Estado.
+  de riesgos; y uno sobre Unión Europea o instituciones del Estado.
 
 Cubre de manera equilibrada política española, Unión Europea, política internacional,
 economía, sociedad, justicia, conflictos bélicos y seguridad, ciencia, cultura y deporte.
@@ -453,11 +514,13 @@ Evita hechos demasiado próximos a estas preguntas recientes:
     last_error: Exception | None = None
     for attempt in range(1, 3):
         try:
-            response = client.responses.create(
+            response = create_background_response(
+                client,
+                label="Investigación de actualidad",
+                max_wait_seconds=720,
                 model=MODEL,
-                tools=[{"type": "web_search", "search_context_size": "high"}],
+                tools=[{"type": "web_search", "search_context_size": "medium"}],
                 input=research_prompt,
-                store=False,
                 text={
                     "format": {
                         "type": "json_schema",
@@ -587,10 +650,12 @@ Devuelve únicamente el JSON exigido por el esquema.
     correction = ""
     for attempt in range(1, 4):
         try:
-            response = client.responses.create(
+            response = create_background_response(
+                client,
+                label=f"Generación del examen (intento {attempt})",
+                max_wait_seconds=600,
                 model=MODEL,
                 input=base_prompt + correction,
-                store=False,
                 text={
                     "format": {
                         "type": "json_schema",
@@ -647,7 +712,7 @@ def main() -> int:
     style = STYLE_FILE.read_text(encoding="utf-8")
     client = OpenAI(
         max_retries=2,
-        timeout=180.0,
+        timeout=60.0,
     )
 
     try:
