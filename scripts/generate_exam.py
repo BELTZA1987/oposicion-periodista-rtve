@@ -11,7 +11,14 @@ from typing import Any
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
-from openai import APIError, AuthenticationError, OpenAI, RateLimitError
+from openai import (
+    APIConnectionError,
+    APIError,
+    APITimeoutError,
+    AuthenticationError,
+    OpenAI,
+    RateLimitError,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "exams.json"
@@ -493,7 +500,10 @@ def main() -> int:
 
     topics = TOPICS_FILE.read_text(encoding="utf-8")
     style = STYLE_FILE.read_text(encoding="utf-8")
-    client = OpenAI()
+    client = OpenAI(
+        max_retries=6,
+        timeout=600.0,
+    )
 
     try:
         print("Investigando actualidad y cargos vigentes...")
@@ -517,6 +527,14 @@ def main() -> int:
         print("ERROR: falta saldo, cuota o se alcanzó un límite de la API.", file=sys.stderr)
         print(str(exc), file=sys.stderr)
         return 4
+    except (APIConnectionError, APITimeoutError) as exc:
+        cause = getattr(exc, "__cause__", None)
+        print(
+            "ERROR persistente de conexión con OpenAI después de los reintentos: "
+            f"{cause or exc}",
+            file=sys.stderr,
+        )
+        return 5
     except APIError as exc:
         print(f"ERROR de OpenAI API: {exc}", file=sys.stderr)
         return 5
