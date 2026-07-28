@@ -43,8 +43,31 @@ async function loadExams(forceRefresh = false) {
     console.warn("No se pudo cargar data/exams.json.", error);
   }
 
-  exams = [...data.exams].sort((a, b) => String(b.id).localeCompare(String(a.id)));
+  exams = data.exams
+    .map(normalizeExam)
+    .sort((a, b) => String(b.id).localeCompare(String(a.id)));
+
   renderDashboard();
+}
+
+function normalizeExam(exam) {
+  const normalized = { ...exam };
+
+  if (normalized.questions && !Array.isArray(normalized.questions) && typeof normalized.questions === "object") {
+    normalized.questions = Object.keys(normalized.questions)
+      .sort()
+      .map(key => normalized.questions[key]);
+  }
+
+  if (!Array.isArray(normalized.questions)) normalized.questions = [];
+  if (!Array.isArray(normalized.blocks)) normalized.blocks = [];
+
+  normalized.id = String(normalized.id ?? "");
+  normalized.title = normalized.title || `Examen ${normalized.id || "sin identificar"}`;
+  normalized.level = normalized.level || "Alto";
+  normalized.timeMinutes = Number(normalized.timeMinutes) || 30;
+
+  return normalized;
 }
 
 function getStatus(exam) {
@@ -111,8 +134,12 @@ function renderDashboard() {
     const status = getStatus(exam);
     const item = progress[exam.id];
     const netScore = getStoredNetScore(exam);
-    const score = item?.completedAt && netScore !== null ? `${formatScore(netScore)}/${exam.questions.length}` : "—";
-    const action = status === "completed" ? "Repetir" : status === "in-progress" ? "Continuar" : "Empezar";
+    const questionCount = Array.isArray(exam.questions) ? exam.questions.length : 0;
+    const blocks = Array.isArray(exam.blocks) ? exam.blocks : [];
+    const score = item?.completedAt && netScore !== null ? `${formatScore(netScore)}/${questionCount}` : "—";
+    const action = questionCount
+      ? (status === "completed" ? "Repetir" : status === "in-progress" ? "Continuar" : "Empezar")
+      : "Revisar datos";
     return `
       <article class="exam-card ${status}">
         <div>
@@ -120,9 +147,10 @@ function renderDashboard() {
             <h2 class="exam-title">${escapeHtml(exam.title)}</h2>
             <span class="status-pill ${status}">${statusLabel(status)}</span>
           </div>
-          <div class="exam-meta">${formatDate(exam.date)} · ${escapeHtml(exam.level)} · ${exam.timeMinutes} min · ${exam.questions.length} preguntas</div>
+          <div class="exam-meta">${formatDate(exam.date)} · ${escapeHtml(exam.level)} · ${exam.timeMinutes} min · ${questionCount} preguntas</div>
           ${exam.currentAffairsCutoff ? `<div class="cutoff">Actualidad verificada hasta ${formatDate(exam.currentAffairsCutoff)}</div>` : ""}
-          <div class="tags">${exam.blocks.map(block => `<span class="tag">${escapeHtml(block)}</span>`).join("")}</div>
+          ${questionCount ? "" : `<div class="cutoff">El examen existe, pero sus preguntas no tienen el formato esperado.</div>`}
+          <div class="tags">${blocks.map(block => `<span class="tag">${escapeHtml(block)}</span>`).join("")}</div>
           <div class="card-actions">
             <button class="open-button" type="button" data-open="${escapeHtml(exam.id)}">${action}</button>
             ${item?.completedAt ? `<button class="clear-result" type="button" data-clear="${escapeHtml(exam.id)}">Borrar resultado</button>` : ""}
@@ -147,6 +175,12 @@ function renderDashboard() {
 function openExam(id) {
   currentExam = exams.find(exam => String(exam.id) === String(id));
   if (!currentExam) return;
+
+  if (!Array.isArray(currentExam.questions) || !currentExam.questions.length) {
+    alert("El examen está publicado, pero las preguntas no tienen un formato válido en data/exams.json.");
+    currentExam = null;
+    return;
+  }
 
   dashboardView.classList.add("hidden");
   examView.classList.remove("hidden");
@@ -305,8 +339,25 @@ function backToDashboard() {
 
 function formatDate(value) {
   if (!value) return "—";
-  return new Intl.DateTimeFormat("es-ES", { day: "2-digit", month: "2-digit", year: "numeric" })
-    .format(new Date(`${value}T12:00:00`));
+
+  const text = String(value).trim();
+  let date;
+
+  // Fecha simple YYYY-MM-DD: se fija el mediodía para evitar cambios por zona horaria.
+  if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+    date = new Date(`${text}T12:00:00`);
+  } else {
+    // Admite ISO completo, por ejemplo 2026-07-28T09:07:00+02:00.
+    date = new Date(text);
+  }
+
+  if (Number.isNaN(date.getTime())) return escapeHtml(text);
+
+  return new Intl.DateTimeFormat("es-ES", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric"
+  }).format(date);
 }
 
 function formatScore(value) {
