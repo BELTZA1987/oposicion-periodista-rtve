@@ -67,6 +67,38 @@ BANNED_OPTIONS = (
 )
 
 
+QUESTION_PLAN = (
+    {"category": "Actualidad España", "freshness": "72h"},
+    {"category": "Actualidad internacional", "freshness": "72h"},
+    {"category": "RTVE y legislación audiovisual", "freshness": "static"},
+    {
+        "category": "Unión Europea e instituciones",
+        "freshness": "current",
+        "topicType": "office_holder",
+    },
+    {"category": "Economía y sociedad", "freshness": "7d"},
+    {"category": "Cultura, ciencia y deporte", "freshness": "72h"},
+    {"category": "Manual de Estilo, ética e igualdad", "freshness": "static"},
+    {"category": "Conflictos, justicia y seguridad", "freshness": "72h"},
+    {"category": "Actualidad España", "freshness": "7d"},
+    {"category": "RTVE y legislación audiovisual", "freshness": "static"},
+    {
+        "category": "Unión Europea e instituciones",
+        "freshness": "current",
+        "topicType": "office_holder",
+    },
+    {"category": "Prevención de riesgos laborales", "freshness": "static"},
+    {"category": "Actualidad internacional", "freshness": "7d"},
+    {"category": "Economía y sociedad", "freshness": "30d"},
+    {"category": "Cultura, ciencia y deporte", "freshness": "72h"},
+    {"category": "Manual de Estilo, ética e igualdad", "freshness": "static"},
+    {"category": "Conflictos, justicia y seguridad", "freshness": "5y"},
+    {"category": "Actualidad España", "freshness": "7d"},
+    {"category": "RTVE y legislación audiovisual", "freshness": "static"},
+    {"category": "Actualidad internacional", "freshness": "5y"},
+)
+
+
 def load_data() -> dict[str, Any]:
     if not DATA_FILE.exists():
         raise FileNotFoundError(f"No existe {DATA_FILE}")
@@ -137,61 +169,121 @@ def research_schema() -> dict[str, Any]:
     }
 
 
-def exam_schema() -> dict[str, Any]:
+def question_schema_for_slot(slot: dict[str, str]) -> dict[str, Any]:
+    topic_type_schema: dict[str, Any]
+
+    if "topicType" in slot:
+        topic_type_schema = {
+            "type": "string",
+            "enum": [slot["topicType"]],
+        }
+    else:
+        topic_type_schema = {
+            "type": "string",
+            "enum": list(TOPIC_TYPES),
+        }
+
     return {
         "type": "object",
         "additionalProperties": False,
         "properties": {
-            "level": {"type": "string", "enum": ["Alto", "Muy alto"]},
-            "timeMinutes": {"type": "integer", "enum": [30]},
+            "prompt": {"type": "string"},
+            "options": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "items": {"type": "string"},
+            },
+            "correctIndex": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3,
+            },
+            "explanation": {"type": "string"},
+            "category": {
+                "type": "string",
+                "enum": [slot["category"]],
+            },
+            "freshness": {
+                "type": "string",
+                "enum": [slot["freshness"]],
+            },
+            "topicType": topic_type_schema,
+            "sourceTitle": {"type": "string"},
+            "sourceUrl": {"type": "string"},
+            "sourceDate": {"type": "string"},
+        },
+        "required": [
+            "prompt",
+            "options",
+            "correctIndex",
+            "explanation",
+            "category",
+            "freshness",
+            "topicType",
+            "sourceTitle",
+            "sourceUrl",
+            "sourceDate",
+        ],
+    }
+
+
+def exam_schema() -> dict[str, Any]:
+    question_properties = {
+        f"q{number:02d}": question_schema_for_slot(slot)
+        for number, slot in enumerate(QUESTION_PLAN, start=1)
+    }
+
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "level": {
+                "type": "string",
+                "enum": ["Alto", "Muy alto"],
+            },
+            "timeMinutes": {
+                "type": "integer",
+                "enum": [30],
+            },
             "currentAffairsCutoff": {"type": "string"},
             "blocks": {
                 "type": "array",
                 "minItems": 6,
                 "maxItems": 9,
-                "items": {"type": "string", "enum": list(CATEGORIES)},
-            },
-            "questions": {
-                "type": "array",
-                "minItems": 20,
-                "maxItems": 20,
                 "items": {
-                    "type": "object",
-                    "additionalProperties": False,
-                    "properties": {
-                        "prompt": {"type": "string"},
-                        "options": {
-                            "type": "array",
-                            "minItems": 4,
-                            "maxItems": 4,
-                            "items": {"type": "string"},
-                        },
-                        "correctIndex": {"type": "integer", "minimum": 0, "maximum": 3},
-                        "explanation": {"type": "string"},
-                        "category": {"type": "string", "enum": list(CATEGORIES)},
-                        "freshness": {"type": "string", "enum": list(FRESHNESS_VALUES)},
-                        "topicType": {"type": "string", "enum": list(TOPIC_TYPES)},
-                        "sourceTitle": {"type": "string"},
-                        "sourceUrl": {"type": "string"},
-                        "sourceDate": {"type": "string"},
-                    },
-                    "required": [
-                        "prompt",
-                        "options",
-                        "correctIndex",
-                        "explanation",
-                        "category",
-                        "freshness",
-                        "topicType",
-                        "sourceTitle",
-                        "sourceUrl",
-                        "sourceDate",
-                    ],
+                    "type": "string",
+                    "enum": list(CATEGORIES),
                 },
             },
+            "questions": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": question_properties,
+                "required": list(question_properties),
+            },
         },
-        "required": ["level", "timeMinutes", "currentAffairsCutoff", "blocks", "questions"],
+        "required": [
+            "level",
+            "timeMinutes",
+            "currentAffairsCutoff",
+            "blocks",
+            "questions",
+        ],
     }
+
+
+def unpack_questions(exam: dict[str, Any]) -> dict[str, Any]:
+    questions = exam.get("questions")
+
+    if isinstance(questions, dict):
+        exam["questions"] = [
+            questions[f"q{number:02d}"]
+            for number in range(1, 21)
+        ]
+
+    return exam
+
 
 
 def validate_research(dossier: dict[str, Any]) -> None:
@@ -210,6 +302,29 @@ def validate_exam(exam: dict[str, Any]) -> None:
     questions = exam.get("questions")
     if not isinstance(questions, list) or len(questions) != 20:
         raise ValueError("El modelo no generó exactamente 20 preguntas.")
+
+    for number, (question, slot) in enumerate(
+        zip(questions, QUESTION_PLAN),
+        start=1,
+    ):
+        if question.get("category") != slot["category"]:
+            raise ValueError(
+                f"La pregunta {number} debe pertenecer a "
+                f"{slot['category']}."
+            )
+
+        if question.get("freshness") != slot["freshness"]:
+            raise ValueError(
+                f"La pregunta {number} debe tener antigüedad "
+                f"{slot['freshness']}."
+            )
+
+        expected_type = slot.get("topicType")
+        if expected_type and question.get("topicType") != expected_type:
+            raise ValueError(
+                f"La pregunta {number} debe ser de tipo "
+                f"{expected_type}."
+            )
 
     prompts: set[str] = set()
     category_counts: dict[str, int] = {}
@@ -379,6 +494,34 @@ Reproducir la dificultad, amplitud temática, concreción y ritmo del cuadernill
 2024 sin copiar ninguna pregunta. La actualidad debe estar verificada mediante el dossier
 obtenido hoy y debe tener mucho más peso cuanto más reciente sea.
 
+MAPA EXACTO DE LAS 20 POSICIONES
+Debes respetar literalmente esta categoría y antigüedad para cada número:
+  1. Actualidad España — 72h.
+  2. Actualidad internacional — 72h.
+  3. RTVE y legislación audiovisual — static.
+  4. Unión Europea e instituciones — current — cargo vigente.
+  5. Economía y sociedad — 7d.
+  6. Cultura, ciencia y deporte — 72h.
+  7. Manual de Estilo, ética e igualdad — static.
+  8. Conflictos, justicia y seguridad — 72h.
+  9. Actualidad España — 7d.
+ 10. RTVE y legislación audiovisual — static.
+ 11. Unión Europea e instituciones — current — cargo vigente.
+ 12. Prevención de riesgos laborales — static.
+ 13. Actualidad internacional — 7d.
+ 14. Economía y sociedad — 30d.
+ 15. Cultura, ciencia y deporte — 72h.
+ 16. Manual de Estilo, ética e igualdad — static.
+ 17. Conflictos, justicia y seguridad — 5y.
+ 18. Actualidad España — 7d.
+ 19. RTVE y legislación audiovisual — static.
+ 20. Actualidad internacional — 5y.
+
+No intercambies las categorías aunque una noticia pudiera encajar en dos bloques.
+La posición 2 y la 13 deben ser inequívocamente de actualidad internacional,
+no de conflictos. La posición 20 debe aportar contexto internacional de los
+últimos cinco años.
+
 COMPOSICIÓN OBLIGATORIA
 - Exactamente 20 preguntas, cuatro opciones y una sola correcta.
 - Tiempo recomendado: exactamente 30 minutos.
@@ -457,7 +600,9 @@ Devuelve únicamente el JSON exigido por el esquema.
                     }
                 },
             )
-            generated = json.loads(response.output_text)
+            generated = unpack_questions(
+                json.loads(response.output_text)
+            )
             validate_exam(generated)
             return generated
         except (ValueError, json.JSONDecodeError) as exc:
@@ -500,10 +645,10 @@ def main() -> int:
 
     topics = TOPICS_FILE.read_text(encoding="utf-8")
     style = STYLE_FILE.read_text(encoding="utf-8")
-client = OpenAI(
-    max_retries=2,
-    timeout=180.0,
-)
+    client = OpenAI(
+        max_retries=2,
+        timeout=180.0,
+    )
 
     try:
         print("Investigando actualidad y cargos vigentes...")
