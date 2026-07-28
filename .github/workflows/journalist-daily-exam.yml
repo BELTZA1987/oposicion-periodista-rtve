@@ -1,0 +1,151 @@
+name: RTVE Periodista - Examen diario
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Crear otro examen aunque ya exista uno de hoy"
+        required: false
+        default: false
+        type: boolean
+
+  schedule:
+    # Ejecución principal: 09:07, hora de Madrid.
+    - cron: "7 9 * * *"
+      timezone: "Europe/Madrid"
+
+    # Segundo intento de seguridad: 09:37.
+    # Si ya existe el examen del día, el script termina sin usar la API.
+    - cron: "37 9 * * *"
+      timezone: "Europe/Madrid"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rtve-periodista-examen-diario
+  cancel-in-progress: false
+
+jobs:
+  generate_exam:
+    name: Investigar, generar y guardar examen
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      OPENAI_MODEL: gpt-5-mini
+      TZ: Europe/Madrid
+
+    steps:
+      - name: Mostrar datos de ejecución
+        shell: bash
+        run: |
+          echo "Evento: ${{ github.event_name }}"
+          echo "Rama predeterminada: ${DEFAULT_BRANCH}"
+          echo "Fecha Madrid: $(date '+%Y-%m-%d %H:%M:%S %Z')"
+
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Comprobar archivos obligatorios
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          archivos=(
+            "data/exams.json"
+            "reference/rtve_topics.txt"
+            "reference/exam_style_2024.txt"
+            "scripts/generate_exam.py"
+            "requirements.txt"
+          )
+
+          for archivo in "${archivos[@]}"; do
+            if [[ ! -f "$archivo" ]]; then
+              echo "::error file=$archivo::Falta el archivo obligatorio: $archivo"
+              exit 1
+            fi
+
+            echo "OK: $archivo"
+          done
+
+      - name: Validar catálogo inicial
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m json.tool data/exams.json > /dev/null
+          echo "data/exams.json es válido."
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Instalar dependencias
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install --requirement requirements.txt
+
+      - name: Comprobar clave de OpenAI
+        shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${OPENAI_API_KEY:-}" ]]; then
+            echo "::error::No existe el secreto OPENAI_API_KEY."
+            exit 1
+          fi
+
+          echo "OPENAI_API_KEY está configurado."
+
+      - name: Investigar actualidad y generar examen
+        shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FORCE_CREATE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
+        run: |
+          set -euo pipefail
+
+          echo "Evento recibido: ${{ github.event_name }}"
+          echo "Creación forzada: ${FORCE_CREATE}"
+
+          python scripts/generate_exam.py
+
+      - name: Validar examen generado
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m json.tool data/exams.json > /dev/null
+          echo "El catálogo final es válido."
+
+      - name: Guardar examen en GitHub
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- data/exams.json; then
+            echo "No hay cambios que publicar."
+            echo "Probablemente ya existe el examen correspondiente a hoy."
+            exit 0
+          fi
+
+          git config user.name "rtve-journalist-exam-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/exams.json
+          git commit -m "Añadir examen de periodista $(date '+%Y-%m-%d')"
+
+          git pull --rebase origin "${DEFAULT_BRANCH}"
+          git push origin "HEAD:${DEFAULT_BRANCH}"
+
+          echo "Examen guardado correctamente en data/exams.json."
