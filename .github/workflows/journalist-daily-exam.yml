@@ -30,7 +30,7 @@ jobs:
   generate_exam:
     name: Investigar, generar y guardar examen
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
 
     env:
       DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
