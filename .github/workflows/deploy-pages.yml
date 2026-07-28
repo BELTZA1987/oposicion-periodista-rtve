@@ -1,0 +1,102 @@
+name: Publicar web de Periodista en GitHub Pages
+
+on:
+  # Permite publicarla manualmente.
+  workflow_dispatch:
+
+  # Publica cuando tú modificas archivos directamente.
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "app.js"
+      - "styles.css"
+      - "actualizar.html"
+      - "manifest.webmanifest"
+      - "icons/**"
+      - "data/**"
+      - ".github/workflows/deploy-pages.yml"
+
+  # Publica cuando termina correctamente el generador diario.
+  workflow_run:
+    workflows:
+      - "RTVE Periodista - Examen diario"
+    types:
+      - completed
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages-periodista
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Publicar sitio
+
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Descargar versión más reciente
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparar archivos públicos
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          rm -rf _site
+          mkdir -p _site
+
+          rsync -av \
+            --exclude=".git/" \
+            --exclude=".github/" \
+            --exclude="_site/" \
+            --exclude="scripts/" \
+            --exclude="reference/" \
+            --exclude="requirements.txt" \
+            --exclude="README.md" \
+            --exclude="netlify.toml" \
+            ./ _site/
+
+          touch _site/.nojekyll
+
+          if [[ ! -f "_site/index.html" ]]; then
+            echo "::error::No se encuentra index.html."
+            exit 1
+          fi
+
+          if [[ ! -f "_site/data/exams.json" ]]; then
+            echo "::error::No se encuentra data/exams.json."
+            exit 1
+          fi
+
+          echo "Archivos preparados para publicar:"
+          find _site -maxdepth 3 -type f | sort
+
+      - name: Subir archivos de GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Publicar web
+        id: deployment
+        uses: actions/deploy-pages@v4
