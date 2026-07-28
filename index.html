@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#3b0a1e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Periodista RTVE">
+  <title>Oposición Periodista RTVE</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">INFORMACIÓN Y CONTENIDOS</p>
+      <h1>Oposición Periodista RTVE</h1>
+      <p class="subtitle">Temario oficial, actualidad verificada y progreso diario.</p>
+    </div>
+    <button id="refreshButton" class="icon-button" type="button" aria-label="Actualizar exámenes">↻</button>
+  </header>
+
+  <main class="shell">
+    <section id="dashboardView">
+      <div id="stats" class="stats-grid"></div>
+
+      <div class="info-strip">
+        <strong>Corrección oficial:</strong> +1 acierto · −1/3 error · 0 en blanco.
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filtrar exámenes">
+          <button class="filter active" data-filter="all" type="button">Todos</button>
+          <button class="filter" data-filter="pending" type="button">Pendientes</button>
+          <button class="filter" data-filter="completed" type="button">Realizados</button>
+        </div>
+      </div>
+
+      <div id="examList" class="exam-list" aria-live="polite"></div>
+    </section>
+
+    <section id="examView" class="hidden">
+      <button id="backButton" class="back-button" type="button">← Volver a exámenes</button>
+      <div id="examHeader"></div>
+      <form id="quizForm"></form>
+      <div class="exam-actions">
+        <button id="gradeButton" class="primary-button" type="button">Corregir examen</button>
+        <button id="resetExamButton" class="secondary-button" type="button">Borrar respuestas</button>
+      </div>
+      <div id="resultPanel" class="result-panel hidden" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <noscript>Esta aplicación necesita JavaScript para corregir y guardar los resultados.</noscript>
+  <script src="app.js?v=1" defer></script>
+</body>
+</html>
