@@ -1,46 +1,108 @@
-GUÍA DE ESTILO DERIVADA DEL CUADERNILLO DE INFORMACIÓN Y CONTENIDOS DE RTVE (2024)
+GUÍA DE REDACCIÓN DERIVADA DEL CUADERNILLO DE INFORMACIÓN Y CONTENIDOS DE RTVE (2024)
 
-Esta guía resume rasgos formales y de dificultad. No reproduce el examen ni autoriza a copiar
-preguntas literalmente.
+FINALIDAD
+Esta guía describe los rasgos de redacción, dificultad y construcción de alternativas
+observados en el cuadernillo de 2024. No se deben copiar ni reformular superficialmente
+sus preguntas.
 
-FORMATO OBSERVADO
-- Prueba objetiva tipo test.
-- Cuatro respuestas y una única correcta.
-- Mezcla inmediata de materias sin separar visualmente por bloques.
-- Preguntas principales y preguntas de reserva en la prueba completa.
-- Penalización de un tercio de punto por respuesta errónea.
-- Ritmo aproximado de 90 segundos por pregunta.
+1. PERFIL CUANTITATIVO OBSERVADO
+- En el cuadernillo completo predominan de forma abrumadora las preguntas interrogativas
+  directas. En un recuento automático, 111 de las 120 contienen una interrogación explícita.
+- La longitud mediana de los enunciados interrogativos es de unas 13 palabras y la media,
+  de unas 15. Las preguntas largas suelen deberse a una atribución, una cita normativa o
+  la descripción imprescindible de un acontecimiento.
+- “Según...” aparece con mucha frecuencia: aproximadamente una de cada cuatro o cinco
+  preguntas se ancla en una ley, artículo, informe, guía, manual, balance u organismo.
+- Las preguntas negativas con “NO” son ocasionales, no una fórmula recurrente.
+- También aparecen algunas frases incompletas terminadas en puntos suspensivos o dos
+  puntos para que las opciones completen el enunciado.
 
-ESTILO DE PREGUNTA
-- Formulación directa, concreta y relativamente breve.
-- Frecuencia alta de nombres propios, cargos, fechas, cifras, instituciones, premios,
-  ciudades, países, leyes y acontecimientos recientes.
-- Preguntas del tipo: quién, cuál, cuándo, dónde, cuántos, qué organismo, qué norma,
-  qué afirmación es correcta o cuál NO lo es.
-- Alternancia brusca entre actualidad, legislación, RTVE, cultura, deporte, ciencia,
-  economía, sucesos e instituciones.
-- Algunas preguntas legales citan una ley, artículo, guía o manual antes de formular
-  el contenido evaluado.
-- La actualidad puede abarcar hechos ocurridos pocas semanas o pocos días antes.
+2. TONO DEL TRIBUNAL
+- Sobrio, objetivo y directo.
+- No explica antes de preguntar.
+- No plantea escenarios pedagógicos ni casos hipotéticos extensos.
+- No utiliza lenguaje motivacional, conversacional o académico.
+- Da por supuesto que el aspirante sigue la actualidad y conoce el temario.
+- Alterna de inmediato actualidad, legislación, RTVE, instituciones, cultura, economía,
+  deporte, ciencia, sociedad, conflictos y prevención.
 
-DISTRACTORES
-- Tres alternativas plausibles y del mismo ámbito que la correcta.
-- Otros cargos, países, premios, cifras o instituciones razonablemente confundibles.
-- Fechas próximas y conceptos jurídicos vecinos.
-- Evitar opciones ridículas o evidentemente imposibles.
-- Evitar que la respuesta correcta destaque por longitud o precisión.
+3. FORMAS DE ENUNCIADO CARACTERÍSTICAS
+- ¿Quién ocupa actualmente un cargo?
+- ¿Cuál fue una cifra, resultado, obra o decisión?
+- ¿Qué organismo, país, institución, documento o artículo corresponde?
+- ¿En qué ciudad, país, fecha o año ocurrió algo?
+- ¿Cuántas personas, veces, comunidades, películas o medallas?
+- Según una fuente concreta, ¿qué dato o afirmación es correcto?
+- Una frase factual o legal que termina en puntos suspensivos o dos puntos.
 
-NIVEL
-- Exige seguimiento habitual de la agenda informativa y conocimiento institucional.
-- Combina datos notorios con detalles relevantes publicados por fuentes fiables.
-- No debe convertirse en trivia irrelevante ni en preguntas de opinión.
-- Los errores ortográficos o ambigüedades del examen histórico no deben imitarse.
+Estas son estructuras, no textos para copiar literalmente.
 
-ADAPTACIÓN AL EXAMEN DIARIO DE 20 PREGUNTAS
-- Tiempo recomendado: 30 minutos.
-- Puntuación: +1 correcta, -1/3 incorrecta y 0 en blanco.
-- Entre 14 y 16 preguntas directas de conocimiento factual.
-- Entre 4 y 6 preguntas normativas, éticas o institucionales que exijan distinguir
-  conceptos próximos.
-- Incluir preguntas negativas (NO, EXCEPTO) de forma ocasional y destacando la negación.
-- No copiar ni reformular superficialmente preguntas del cuadernillo de 2024.
+4. REDACCIÓN DE ACTUALIDAD
+- El enunciado identifica el acontecimiento con el contexto mínimo imprescindible.
+- Puede usar “este año”, “el pasado mes”, “en las últimas elecciones” o una fecha
+  concreta, siempre que la fecha del examen elimine cualquier ambigüedad.
+- Pregunta normalmente por un protagonista, cargo, lugar, fecha, cifra, resultado,
+  organización, causa acreditada o consecuencia central.
+- Cuando una versión sea discutida, atribuye: “Según [autoridad o fuente]...”.
+- Las noticias recientes deben ser relevantes y reconocibles dentro de la agenda,
+  no curiosidades aisladas.
+
+5. REDACCIÓN NORMATIVA E INSTITUCIONAL
+- Cita la norma o fuente cuando sea necesaria para fijar el marco.
+- Fórmulas frecuentes: “Según el artículo...”, “Según la Ley...”, “Según el Manual
+  de Estilo de RTVE...”, “¿A quién corresponde...?”, “¿Qué exige...?”.
+- Evalúa un contenido concreto: competencia, mayoría, plazo, obligación, definición,
+  porcentaje, composición, mandato o prohibición.
+- No convierte la pregunta en una explicación doctrinal.
+
+6. CONSTRUCCIÓN DE OPCIONES
+- Las cuatro alternativas deben ser homogéneas:
+  * cuatro personas;
+  * cuatro instituciones;
+  * cuatro fechas o años;
+  * cuatro cifras;
+  * cuatro países o ciudades;
+  * cuatro títulos u obras;
+  * cuatro enunciados jurídicos comparables.
+- Los distractores pertenecen al mismo ámbito y son razonablemente confundibles.
+- En cargos: personas con responsabilidades políticas o institucionales cercanas.
+- En geografía: países o ciudades vinculados a la región o acontecimiento.
+- En cifras: valores cercanos y verosímiles.
+- En legislación: mayorías, plazos, órganos o conceptos jurídicos vecinos.
+- En cultura y deporte: obras, premiados, selecciones o eventos comparables.
+- No se iguala artificialmente la longitud, pero se evita que la correcta destaque.
+- No se utilizan respuestas absurdas, humorísticas, “todas”, “ninguna” o “A y B”.
+
+7. PROPORCIÓN RECOMENDADA PARA 20 PREGUNTAS
+- 17 a 19 preguntas interrogativas directas.
+- 1 o 2 frases incompletas con puntos suspensivos o dos puntos.
+- 4 a 6 preguntas ancladas explícitamente en una fuente, ley, artículo, manual o informe.
+- Como máximo una pregunta negativa con “NO” o “EXCEPTO”.
+- Mayoría de enunciados entre 8 y 22 palabras.
+- Variación natural de “Quién”, “Cuál”, “Qué”, “En qué”, “Cuándo”, “Cuántos”,
+  “Cómo”, “Por qué” y “Según...”.
+
+8. FORMULACIONES QUE DEBEN EVITARSE
+- “Imagina que...”
+- “Supón que...”
+- “En un escenario hipotético...”
+- “Como periodista, ¿qué harías?”
+- “Selecciona la opción más adecuada.”
+- “Basándote en el dossier...”
+- “Según la información proporcionada anteriormente...”
+- Casos prácticos largos.
+- Enunciados con una explicación incorporada que ya revela la respuesta.
+- Repetir “¿Cuál de las siguientes afirmaciones...?” de forma sistemática.
+- Preguntas genéricas de opinión, interpretación libre o sentido común.
+
+9. REVISIÓN FINAL
+Cada pregunta debe superar esta comprobación:
+- Suena a tribunal RTVE.
+- Evalúa un dato o contenido preciso.
+- Es breve sin perder exactitud.
+- Incluye atribución cuando corresponde.
+- Presenta cuatro opciones homogéneas.
+- Contiene distractores plausibles.
+- No delata la correcta.
+- No copia el cuadernillo.
+- No contiene erratas ni ambigüedades.
