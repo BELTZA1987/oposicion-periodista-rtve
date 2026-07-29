@@ -10,8 +10,13 @@ on:
         type: boolean
 
   schedule:
-    # Ejecución principal: 09:07, hora de Madrid.
     - cron: "7 9 * * *"
+      timezone: "Europe/Madrid"
+
+    - cron: "22 9 * * *"
+      timezone: "Europe/Madrid"
+
+    - cron: "37 9 * * *"
       timezone: "Europe/Madrid"
 
     # Segundo intento de seguridad: 09:37.
