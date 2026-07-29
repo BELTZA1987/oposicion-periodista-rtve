@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T12:19:55.935668+02:00",
+  "updatedAt": "2026-07-29T12:34:10.960309+02:00",
   "exams": [
+    {
+      "id": "002",
+      "title": "Examen 002",
+      "date": "2026-07-29",
+      "level": "Alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-07-29T12:34:10+02:00",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "El 28/07/2026, ¿qué medida aprobó el Consejo de Ministros para coordinar la respuesta y ayudas ante episodios catastróficos en varias comunidades autónomas?",
+          "options": [
+            "Conceder ayudas directas a través del Fondo de Compensación Interautonómico",
+            "Proponer la solicitud de ayuda al Mecanismo Europeo de Protección Civil",
+            "Declarar el estado de alarma para las áreas más afectadas",
+            "Declarar territorios como zonas afectadas por emergencias de protección civil"
+          ],
+          "correctIndex": 3,
+          "explanation": "El 28/07/2026 el Consejo de Ministros aprobó declarar territorios como zonas afectadas por emergencias de protección civil para coordinar respuesta y ayudas, a propuesta del Ministerio del Interior, tal y como recogió la nota de EFE del 28/07/2026. Las otras opciones son medidas distintas que no correspondieron a ese acuerdo publicado ese día.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "EFE - referencia del Consejo de Ministros (cobertura informativa)",
+          "sourceUrl": "https://efe.com/espana/2026-07-28/sanchez-balance-curso-politico-3/",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "El 28/07/2026 un fuerte seísmo motivó avisos de tsunami locales. ¿En qué prefectura japonesa se produjo ese terremoto?",
+          "options": [
+            "Aichi (región de Chūbu)",
+            "Hokkaido",
+            "Kumamoto (isla de Kyushu)",
+            "Kanagawa (región de Kantō)"
+          ],
+          "correctIndex": 2,
+          "explanation": "La Agencia Meteorológica de Japón y la cobertura de la AP señalaron que el terremoto del 28/07/2026 sacudió la prefectura de Kumamoto, en Kyushu, y se emitieron avisos de tsunami locales. Hokkaido, Aichi y Kanagawa son otras prefecturas japonesas que no correspondían al suceso referido.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "AP (Agencia Associated Press) / cobertura general",
+          "sourceUrl": "https://apnews.com/article/japan-kumamoto-earthquake-2026-07-28",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el marco jurídico vigente, ¿qué norma configura la Corporación RTVE como entidad pública responsable del servicio público de comunicación audiovisual?",
+          "options": [
+            "Ley 13/2022, de 7 de julio, General de Comunicación Audiovisual",
+            "Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal",
+            "Real Decreto-ley 4/2018, sobre la designación del Consejo de Administración",
+            "Ley 31/1995, de Prevención de Riesgos Laborales"
+          ],
+          "correctIndex": 1,
+          "explanation": "La Ley 17/2006 (5 de junio) constituye el marco jurídico que define a la Corporación RTVE y su misión de servicio público; las otras normas mencionadas son relevantes en ámbitos distintos (comunicación audiovisual general, régimen de nombramiento del Consejo, prevención laboral).",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE – Ley 17/2006 (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-9958",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "Según la verificación institucional incluida en el dossier, ¿quién figura como Secretario General de la Organización de las Naciones Unidas?",
+          "options": [
+            "António Guterres",
+            "Kofi Annan",
+            "Ban Ki-moon",
+            "Michelle Bachelet"
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier recoge la página oficial de la ONU que identifica a António Guterres como Secretario General en ejercicio; Kofi Annan y Ban Ki-moon son anteriores y Michelle Bachelet ocupó otros cargos (alto comisionado de la ONU para los Derechos Humanos), por lo que la opción correcta es António Guterres.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "United Nations – página del Secretario General (sitio oficial)",
+          "sourceUrl": "https://www.un.org/sg/en/about-secretary-general",
+          "sourceDate": "(actualización institucional)"
+        },
+        {
+          "prompt": "Entre las medidas del 21.º paquete de sanciones de la UE adoptado el 23/07/2026, ¿qué disposición económica destacada aparece en el comunicado oficial?",
+          "options": [
+            "Prohibición de exportación de tecnología civil a países sancionados",
+            "Prohibición total de importaciones de gas ruso a partir de 2027",
+            "Congelación de todos los activos de intermediarios comerciales hasta 2028",
+            "Suspensión de la adaptación del tope de precio del petróleo hasta julio de 2027"
+          ],
+          "correctIndex": 3,
+          "explanation": "La nota oficial del Consejo/Comisión sobre el paquete del 23/07/2026 destaca, entre otras medidas, la suspensión de la adaptación de determinados mecanismos del tope al precio del petróleo hasta julio de 2027. Las otras opciones no figuran como tal en ese resumen oficial.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "Consilium / European Commission – comunicado oficial (paquete de sanciones 23/07/2026)",
+          "sourceUrl": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "En la cobertura informativa de los grandes incendios en la península (26‑27/07/2026) se utilizaron imágenes satelitales del programa Copernicus. ¿Qué sensores Sentinel se citaron explícitamente?",
+          "options": [
+            "Sentinel-1 y Sentinel-5P",
+            "Sentinel-2 y Sentinel-1",
+            "Sentinel-4 y Sentinel-6",
+            "Sentinel-2 y Sentinel-3"
+          ],
+          "correctIndex": 3,
+          "explanation": "La nota del 26‑27/07/2026 citada en el dossier indica el uso de imágenes Sentinel-2 y Sentinel-3 para cartografiar la columna de humo; Sentinel-1 y -5P o combinaciones con Sentinel-4/-6 no fueron las mencionadas en esa crónica.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "EFE (cita de Copernicus Sentinel imagery)",
+          "sourceUrl": "https://efe.com/medio-ambiente/2026-07-27/hectareas-quemadas-espana-2026/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿cuál de las siguientes obligaciones figura como principio aplicable a la información de la Corporación?",
+          "options": [
+            "Dar prioridad a entrevistas con cargos del Gobierno sobre otras fuentes",
+            "Ofrecer información rigurosa, neutral, imparcial y plural",
+            "Promover explícitamente la agenda política del Gobierno en los informativos",
+            "Evitar la publicación de correcciones para no dañar la credibilidad"
+          ],
+          "correctIndex": 1,
+          "explanation": "El Manual de Estilo de RTVE establece la obligación de ofrecer información rigurosa, neutral, imparcial y plural. Las otras alternativas contradicen los principios del Manual y no aparecen como obligaciones institucionales.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE (sitio oficial)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/crtve/",
+          "sourceDate": "(páginas actualizadas online)"
+        },
+        {
+          "prompt": "El 28/07/2026 respecto al incendio que afectaba a provincias como Toledo, ¿qué decisión operativa se tomó según la cobertura de EFE?",
+          "options": [
+            "Se rebajó la emergencia a nivel 2 y la comunidad asumió la dirección de extinción",
+            "Se elevó la emergencia a nivel 3 y se solicitó apoyo internacional",
+            "Se declaró el estado de alarma en la provincia de Toledo",
+            "Se ordenó la intervención directa del Ejército por mandato del Gobierno central"
+          ],
+          "correctIndex": 0,
+          "explanation": "EFE informó el 28/07/2026 que el incendio fue rebajado a emergencia operativa nivel 2 y que la Junta de Castilla‑La Mancha asumió la dirección de extinción. Las otras opciones no se ajustan a la información oficial difundida ese día.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "EFE - noticia regional (Toledo)",
+          "sourceUrl": "https://efe.com/espana/2026-07-28/incendio-toledo-baja-nivel-2/",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "La actualización provisional del MITECO citada por EFE el 27/07/2026 sobre incendios forestales indicó qué tendencia interanual en la superficie afectada hasta esa fecha?",
+          "options": [
+            "Datos insuficientes para comparar con 2025",
+            "Una disminución notable respecto a 2025",
+            "Cifras estables sin variación significativa respecto a 2025",
+            "Un fuerte aumento interanual respecto a 2025"
+          ],
+          "correctIndex": 3,
+          "explanation": "La actualización provisional del 27/07/2026 difundida por EFE y citando al MITECO mostró un aumento sustancial en la superficie forestal afectada respecto a 2025; no se informó de una disminución ni de ausencia de comparativa.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "recent_event",
+          "sourceTitle": "EFE (cita a MITECO)",
+          "sourceUrl": "https://efe.com/medio-ambiente/2026-07-27/hectareas-quemadas-espana-2026/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "¿Qué documento del temario regula específicamente la defensa de los derechos del menor en los contenidos audiovisuales de RTVE?",
+          "options": [
+            "Ley 31/1995, de Prevención de Riesgos Laborales",
+            "Código de Autorregulación para la Defensa de los Derechos del Menor en los Contenidos Audiovisuales (23/07/2010)",
+            "Ley 13/2022, General de Comunicación Audiovisual",
+            "Manual de Estilo de RTVE"
+          ],
+          "correctIndex": 1,
+          "explanation": "El documento específico sobre la defensa de los derechos del menor en contenidos audiovisuales de RTVE es el Código de Autorregulación aprobado el 23 de julio de 2010. Las otras normas o manuales tratan ámbitos distintos (prevención laboral, regulación audiovisual general, manual interno editorial).",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Código de Autorregulación para la Defensa de los Derechos del Menor (temario RTVE)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "2010-07-23"
+        },
+        {
+          "prompt": "Según la verificación institucional incluida en el dossier, ¿quién figura en la biografía oficial como Presidente del Gobierno de España?",
+          "options": [
+            "Pablo Iglesias Turrión",
+            "Alberto Núñez Feijóo",
+            "Pedro Sánchez Pérez‑Castejón",
+            "Yolanda Díaz"
+          ],
+          "correctIndex": 2,
+          "explanation": "La página oficial de La Moncloa incluida en el dossier identifica a Pedro Sánchez Pérez‑Castejón como Presidente del Gobierno. Las otras personas enumeradas no ocupan ese cargo según la verificación institucional aportada.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "La Moncloa – web oficial del Presidente del Gobierno",
+          "sourceUrl": "https://www.lamoncloa.gob.es/presidente/biografia/paginas/index.aspx",
+          "sourceDate": "(actualización institucional)"
+        },
+        {
+          "prompt": "Según la Ley 31/1995 de Prevención de Riesgos Laborales, ¿cuál de estas es una competencia o derecho de las personas trabajadoras?",
+          "options": [
+            "Recibir información y formación sobre los riesgos laborales y medidas preventivas",
+            "Eximir a la empresa de adoptar medidas preventivas cuando existan cargas de trabajo altas",
+            "Solicitar reducción de jornada sin justificación por riesgos de pantalla",
+            "Reemplazar al servicio de prevención de la empresa por uno externo sin autorización"
+          ],
+          "correctIndex": 0,
+          "explanation": "La Ley 31/1995 garantiza derechos como la información y la formación sobre riesgos laborales y medidas preventivas. Las otras alternativas no se corresponden con derechos recogidos en la norma básica de prevención laboral.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE – Ley 31/1995, de Prevención de Riesgos Laborales (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "¿Qué órgano de la Unión Europea adoptó formalmente el 23/07/2026 el vigésimo primer paquete de sanciones contra Rusia?",
+          "options": [
+            "La Comisión Europea en solitario",
+            "El Parlamento Europeo",
+            "El Consejo de la Unión Europea (Consilium / Council)",
+            "El Tribunal de Justicia de la Unión Europea"
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier cita el comunicado oficial del Consejo de la Unión Europea (Consilium) del 23/07/2026 como la institución que adoptó el 21.º paquete de sanciones contra Rusia; no fue una decisión exclusiva del Parlamento, la Comisión sola ni del Tribunal de Justicia.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "recent_event",
+          "sourceTitle": "Consilium / European Commission – comunicado oficial (paquete de sanciones 23/07/2026)",
+          "sourceUrl": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "El 29/06/2026 el Gobierno aprobó un segundo decreto‑ley. ¿Cuál fue el objetivo declarado de ese decreto según la cobertura citada en el dossier?",
+          "options": [
+            "Mitigar el impacto económico derivado del conflicto en Oriente Medio mediante medidas fiscales y presupuestarias",
+            "Cambiar el marco de financiación autonómica para 2026",
+            "Regular urgentemente la normativa sobre alquileres urbanos",
+            "Incrementar la inversión en infraestructuras de transporte"
+          ],
+          "correctIndex": 0,
+          "explanation": "La cobertura de EFE recogida en el dossier explica que el decreto‑ley del 29/06/2026 buscaba mitigar efectos económicos derivados del conflicto en Oriente Medio con medidas fiscales y presupuestarias; las otras opciones no describen el objetivo de ese decreto citado.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "economy",
+          "sourceTitle": "EFE – nota sobre aprobación de segundo decreto‑ley (29/06/2026)",
+          "sourceUrl": "https://efe.com/portada-espana/2/?e-page-586a6f9=1886",
+          "sourceDate": "2026-06-29"
+        },
+        {
+          "prompt": "En la cartografía de la columna de humo por los incendios en la península se hizo referencia al programa europeo que suministró las imágenes. ¿Cuál fue ese programa?",
+          "options": [
+            "Copernicus",
+            "Galileo",
+            "EUMETSAT Meteosat",
+            "Horizon Europe"
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier menciona explícitamente el uso de imágenes del programa Copernicus (sensores Sentinel) para mostrar la extensión del humo derivado de los incendios; Galileo es un sistema de posicionamiento, EUMETSAT gestiona satélites meteorológicos y Horizon Europe es un programa de investigación.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "EFE (cita de Copernicus Sentinel imagery)",
+          "sourceUrl": "https://efe.com/medio-ambiente/2026-07-27/hectareas-quemadas-espana-2026/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿cuál de las siguientes prácticas está sujeta a limitaciones y pautas específicas en informativos?",
+          "options": [
+            "Publicar íntegramente comunicados oficiales sin contraste",
+            "Dramatizaciones o reconstrucciones que puedan inducir a error sobre hechos informativos",
+            "Emitir imágenes en directo sin límite en horario nocturno",
+            "Promover contenidos comerciales propios en los espacios informativos"
+          ],
+          "correctIndex": 1,
+          "explanation": "El Manual de Estilo establece limitaciones y pautas éticas para reconstrucciones y dramatizaciones en informativos para no inducir a error; las otras alternativas no reflejan las pautas específicas que el Manual regula.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE – secciones 'Cuestiones sensibles' y 'Menores'",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "(páginas actualizadas online)"
+        },
+        {
+          "prompt": "En el contexto de los hechos de los últimos cinco años, ¿qué suceso iniciado el 24/02/2022 se identifica como factor central de la agenda europea de seguridad?",
+          "options": [
+            "La pandemia de COVID-19",
+            "La firma del acuerdo comercial UE-UK",
+            "La crisis migratoria en el Mediterráneo de 2021",
+            "La invasión a gran escala de Ucrania por Rusia"
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier subraya que la invasión a gran escala iniciada por Rusia el 24/02/2022 ha reorientado la agenda de seguridad y defensa europea; las otras opciones, aunque relevantes, no corresponden a la fecha ni al hecho señalado.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Reuters / cobertura y síntesis internacional (líneas temporales y análisis)",
+          "sourceUrl": "https://www.trust.org/item/20220224105733-9vwz7/",
+          "sourceDate": "2022-02-24"
+        },
+        {
+          "prompt": "Según la cobertura de EFE del 28/07/2026, ¿cómo han calificado autoridades y medios el incendio del sur de Ávila?",
+          "options": [
+            "Como un incendio de pequeña extensión sin repercusión interprovincial",
+            "Como un conato fácilmente controlable sin evacuaciones",
+            "Como uno de los incendios de mayor envergadura registrados en la historia reciente de España",
+            "Como un incendio exclusivamente agrícola sin daños en infraestructuras"
+          ],
+          "correctIndex": 2,
+          "explanation": "EFE recogió declaraciones que describieron el incendio del sur de Ávila como uno de los más graves o de mayor envergadura de la historia reciente de España; las demás alternativas contradicen la información oficial sobre la escala y medidas de extinción y evacuación.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "recent_event",
+          "sourceTitle": "EFE - evolución del incendio en Ávila",
+          "sourceUrl": "https://efe.com/espana/2026-07-28/evolucion-incendio-avila-2/",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "¿Qué norma concreta el régimen jurídico aplicable a la designación del Consejo de Administración de la Corporación RTVE y de su presidente?",
+          "options": [
+            "Ley 13/2022, General de Comunicación Audiovisual",
+            "Ley 31/1995, de Prevención de Riesgos Laborales",
+            "Real Decreto-ley 4/2018, de 22 de junio",
+            "Código Penal"
+          ],
+          "correctIndex": 2,
+          "explanation": "El Real Decreto-ley 4/2018 (22 de junio) concreta el régimen jurídico aplicable a la designación del Consejo de Administración de RTVE y de su presidente; las demás normas enumeradas no regulan ese procedimiento concreto.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Real Decreto-ley 4/2018 (temario RTVE)",
+          "sourceUrl": "https://www.boe.es/buscar/doc.php?id=BOE-A-2018-9000",
+          "sourceDate": "2018-06-22"
+        },
+        {
+          "prompt": "En el marco de la iniciativa ReArm/Readiness 2030 (marzo de 2025), ¿qué finalidad se atribuye al instrumento propuesto conocido como SAFE?",
+          "options": [
+            "Crear un fondo de ayuda humanitaria para refugiados en la UE de 150.000 millones de euros",
+            "Respaldar inversiones de defensa y adquisiciones conjuntas con capacidad de hasta 150.000 millones de euros",
+            "Financiar exclusivamente proyectos de investigación civil en seguridad alimentaria",
+            "Suministrar ayuda financiera directa a gobiernos no pertenecientes a la OTAN"
+          ],
+          "correctIndex": 1,
+          "explanation": "Los documentos oficiales de marzo de 2025 sobre Readiness/ReArm proponen el instrumento SAFE para apoyar inversiones de defensa y medidas de adquisición conjunta, con una capacidad declarada de hasta 150.000 millones de euros; las otras opciones no reflejan el propósito ni el alcance financiero descrito en los documentos oficiales.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "politics",
+          "sourceTitle": "EUR-Lex / Documentos de la Comisión y Comunicaciones oficiales (White Paper/ReArm 2025)",
+          "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/?uri=celex:52025JC0120",
+          "sourceDate": "2025-03-19"
+        }
+      ]
+    },
     {
       "id": "001",
       "title": "Examen 001",
