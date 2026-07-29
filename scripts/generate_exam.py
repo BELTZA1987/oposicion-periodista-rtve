@@ -553,8 +553,10 @@ Actúa como miembro experto del tribunal examinador de RTVE para la ocupación t
 Información y Contenidos. Genera el EXAMEN {exam_id}, de 20 preguntas, a fecha {TODAY}.
 
 OBJETIVO
-Reproducir la dificultad, amplitud temática, concreción y ritmo del cuadernillo oficial de
-2024 sin copiar ninguna pregunta. La actualidad debe estar verificada mediante el dossier
+Reproducir la dificultad, amplitud temática, concreción, ritmo y, especialmente, la
+redacción del cuadernillo oficial de 2024 sin copiar ninguna pregunta. El resultado debe
+parecer un fragmento nuevo de aquel cuadernillo: preguntas autónomas, sobrias, factuales
+y mezcladas sin bloques visibles. La actualidad debe estar verificada mediante el dossier
 obtenido hoy y debe tener mucho más peso cuanto más reciente sea.
 
 MAPA EXACTO DE LAS 20 POSICIONES
@@ -608,16 +610,85 @@ COMPOSICIÓN OBLIGATORIA
 - Al menos dos preguntas deben preguntar por un cargo o presidencia vigente.
 - Mezcla las materias; no agrupes las preguntas por bloques.
 
-ESTILO
-- Entre 14 y 16 preguntas directas de conocimiento factual.
-- El resto puede exigir distinguir normas, instituciones o conceptos próximos.
-- Usa quién, cuál, cuándo, dónde, cuántos, qué organismo o qué afirmación es correcta.
-- Puedes incluir una o dos preguntas con NO o EXCEPTO, destacando la negación.
-- Distractores próximos y plausibles: otros cargos, países, fechas, cifras, premios,
-  instituciones o conceptos del mismo ámbito.
-- No uses opciones absurdas, “todas”, “ninguna” ni combinaciones de respuestas.
-- No hagas que la correcta sea reconocible por su longitud o tono.
-- No imites erratas del examen histórico.
+REDACCIÓN OBLIGATORIA: IMITAR EL CUADERNILLO RTVE DE 2024
+- La redacción debe parecer obra de un tribunal, no de un profesor ni de una IA.
+- Predomina la pregunta factual, seca y concreta. No introduzcas explicaciones,
+  contexto pedagógico ni razonamientos en el enunciado.
+- Entre 17 y 19 enunciados deben adoptar forma interrogativa directa con signos
+  ¿...?; una o dos preguntas pueden formularse como frase incompleta terminada
+  en puntos suspensivos o dos puntos, para que las opciones completen la frase.
+- Longitud orientativa del enunciado: entre 8 y 22 palabras. Se permiten hasta
+  35 cuando sea imprescindible citar una ley, informe, declaración o antecedente.
+- Alterna de forma natural estas entradas, sin convertirlas en una plantilla mecánica:
+  “¿Quién...?”, “¿Cuál...?”, “¿Qué...?”, “¿En qué...?”, “¿Cuándo...?”,
+  “¿Cuántos...?”, “¿Cómo...?”, “¿Por qué...?” y “Según [fuente], ¿...?”.
+- Entre cuatro y seis preguntas deben comenzar o quedar claramente ancladas con
+  “Según...” cuando la respuesta dependa de una ley, artículo, informe, manual,
+  guía, organismo o autoridad concreta.
+- En actualidad, utiliza fórmulas propias del cuadernillo: “este año”, “el pasado
+  mes de...”, “en las últimas elecciones”, “actualmente” o una fecha concreta,
+  siempre que resulten inequívocas respecto a la fecha del examen.
+- Los nombres propios, cargos, organismos, leyes, premios, ciudades, países,
+  obras, fechas y cifras deben aparecer con su denominación precisa.
+- Como máximo una pregunta del examen puede utilizar una negación destacada
+  (“NO” o “EXCEPTO”). No abuses de esta técnica.
+- Evita expresiones impropias del examen real: “imagina que”, “supón que”,
+  “en un escenario hipotético”, “como profesional”, “¿qué harías?”,
+  “selecciona la opción más adecuada” o largos casos prácticos.
+- Evita comenzar repetidamente con “¿Cuál de las siguientes afirmaciones...?”.
+  Úsalo solo cuando sea natural en una pregunta normativa o institucional.
+- No añadas pistas metalingüísticas como “basándote en el dossier”, “según la
+  información proporcionada” o “de acuerdo con la noticia anterior”.
+
+FORMA DE LAS OPCIONES
+- Las cuatro opciones deben pertenecer a la misma clase de respuesta:
+  cuatro personas, cuatro países, cuatro fechas, cuatro cifras, cuatro obras,
+  cuatro instituciones o cuatro enunciados jurídicos comparables.
+- Si se pregunta por una persona, lugar, fecha, cifra, partido, obra o institución,
+  usa opciones breves, sin explicaciones añadidas.
+- Si se pregunta por una norma o definición, usa oraciones completas y paralelas.
+- No fuerces la misma longitud exacta en todas las opciones: el examen real no
+  siempre lo hace. Evita únicamente que la correcta sea un evidente párrafo
+  mientras las otras son palabras sueltas, salvo que el texto legal lo exija.
+- Los distractores deben ser próximos y plausibles: cargos del mismo nivel,
+  países de la misma región, fechas cercanas, cifras razonables, premios de la
+  misma categoría, instituciones con competencias parecidas o conceptos legales
+  vecinos.
+- No uses opciones absurdas, humorísticas, genéricas ni manifiestamente falsas.
+- No uses “todas las anteriores”, “ninguna de las anteriores”, “A y B” ni
+  respuestas dobles.
+- Escribe las opciones como respuestas autónomas, con mayúscula inicial y punto
+  final cuando sean oraciones.
+
+PATRONES QUE DEBEN APARECER EN EL CONJUNTO, NO EN TODAS LAS PREGUNTAS
+- Cargo vigente: “¿Quién es actualmente...?” o “¿Quién ocupa...?”.
+- Dato reciente: “¿Cuál fue...?”, “¿Cuántos...?” o “¿En qué ciudad/país...?”.
+- Fuente o informe: “Según [organismo/informe], ¿...?”.
+- Norma: “Según el artículo [número] de [ley], ¿...?” o una frase legal que
+  deba completarse.
+- Acontecimiento internacional: pregunta por protagonista, lugar, fecha,
+  organismo, causa acreditada o consecuencia principal.
+- Cultura y deporte: premiado, obra, resultado, sede, selección, competición o
+  institución, con distractores del mismo ámbito.
+
+ATRIBUCIÓN Y PRUDENCIA PERIODÍSTICA
+- Cuando un hecho sea controvertido, disputado o dependa de una versión oficial,
+  incorpora la atribución dentro del enunciado: “Según [autoridad/fuente]...”.
+- No conviertas una acusación, estimación o versión de parte en un hecho absoluto.
+- Si una cifra procede de una encuesta, balance o informe, menciona la fuente en
+  el enunciado, como hace habitualmente el cuadernillo.
+
+CONTROL FINAL DE ESTILO
+Antes de devolver el JSON, revisa silenciosamente cada pregunta y corrige:
+1. ¿Suena a pregunta de oposición RTVE y no a ejercicio didáctico?
+2. ¿Pregunta un dato o contenido concreto?
+3. ¿El enunciado es tan breve como permite la precisión?
+4. ¿La atribución aparece cuando es necesaria?
+5. ¿Las cuatro opciones son de la misma naturaleza?
+6. ¿Los distractores podrían confundir a una persona razonablemente informada?
+7. ¿La respuesta correcta no destaca por tono, detalle o longitud?
+8. ¿No se repite una fórmula verbal de forma monótona?
+9. ¿Se han eliminado erratas, ambigüedades y giros artificiales?
 
 FIABILIDAD
 - Usa exclusivamente hechos presentes en el dossier, tanto para actualidad como para
@@ -676,7 +747,8 @@ Devuelve únicamente el JSON exigido por el esquema.
             correction = (
                 "\n\nCORRECCIÓN OBLIGATORIA PARA EL NUEVO INTENTO:\n"
                 f"El intento anterior fue rechazado por este motivo: {exc}. "
-                "Rehaz el examen completo y cumple exactamente todos los mínimos."
+                "Rehaz el examen completo, cumple exactamente todos los mínimos y "
+                "aplica de nuevo las reglas de redacción del cuadernillo RTVE."
             )
 
     raise RuntimeError(f"No se pudo generar un examen válido: {last_error}")
