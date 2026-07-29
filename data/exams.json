@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-29T12:34:10.960309+02:00",
+  "updatedAt": "2026-07-29T13:08:10.694828+02:00",
   "exams": [
+    {
+      "id": "003",
+      "title": "Examen 003",
+      "date": "2026-07-29",
+      "level": "Alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-07-29",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "¿Qué medio desplegó cobertura informativa especial sobre los incendios del 26–27 de julio de 2026?",
+          "options": [
+            "RTVE.",
+            "EFE.",
+            "El País.",
+            "La Sexta."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier indica que RTVE desplegó cobertura informativa especial con directos y resúmenes sobre los incendios del 26–27 de julio de 2026.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "Incendios en España | Última hora en vídeo y en directo (RTVE)",
+          "sourceUrl": "https://www.rtve.es/play/incendios/; https://www.rtve.es/noticias/20260726/incendios-espana-hoy-ultima-hora-directo/17169207.shtml",
+          "sourceDate": "2026-07-26"
+        },
+        {
+          "prompt": "¿Qué país sufrió un terremoto de magnitud aproximada 7,1 el 28 de julio de 2026?",
+          "options": [
+            "Filipinas.",
+            "Indonesia.",
+            "Chile.",
+            "Japón."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier recoge la nota de agencias sobre un seísmo de magnitud ~7,1 ocurrido el 28 de julio de 2026 en el suroeste de Japón.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "A 7.1 magnitude quake hits Japan's southern Kyushu island (AP)",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el Real Decreto‑ley 4/2018, ¿a qué órgano se refiere la norma para la designación del presidente de la Corporación RTVE?",
+          "options": [
+            "Consejo de Ministros.",
+            "Cortes Generales.",
+            "Consejo de Administración de la Corporación RTVE.",
+            "Tribunal de Cuentas."
+          ],
+          "correctIndex": 2,
+          "explanation": "El Real Decreto‑ley 4/2018 concreta el régimen jurídico aplicable a la designación del Consejo de Administración de la Corporación RTVE y de su presidente.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "RTVE — Legislación: Real Decreto‑ley 4/2018",
+          "sourceUrl": "https://www.rtve.es/corporacion/legislacion/",
+          "sourceDate": "2018-06-22"
+        },
+        {
+          "prompt": "¿Quién es actualmente Presidenta de la Comisión Europea?",
+          "options": [
+            "Charles Michel.",
+            "Ursula von der Leyen.",
+            "Roberta Metsola.",
+            "Christine Lagarde."
+          ],
+          "correctIndex": 1,
+          "explanation": "La verificación institucional citada en el dossier indica que Ursula von der Leyen es la Presidenta de la Comisión Europea en la fecha de comprobación.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Commission — Ursula von der Leyen (persona)",
+          "sourceUrl": "https://commission.europa.eu/persons/ursula-von-der-leyen_en",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "¿Qué importe total multó la Comisión Europea a Google el 23 de julio de 2026 bajo el DMA?",
+          "options": [
+            "€430 millones.",
+            "€550 millones.",
+            "€460 millones.",
+            "€890 millones."
+          ],
+          "correctIndex": 3,
+          "explanation": "La Comisión adoptó dos decisiones que suman multas de 460 M€ y 430 M€, totalizando 890 M€ en las resoluciones del 23 de julio de 2026 bajo el DMA.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "Commission fines Google €890 million for breaches of the Digital Markets Act",
+          "sourceUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-google-eu890-million-breaches-digital-markets-act",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "¿Qué organismo emitió el Aviso Especial nº 26/2026 por ola de calor a finales de julio de 2026?",
+          "options": [
+            "AEMET (Agencia Estatal de Meteorología).",
+            "Ministerio de Sanidad.",
+            "Agencia Europea de Medio Ambiente.",
+            "Servicio Copernicus."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier indica que AEMET emitió el Aviso Especial de Fenómenos Adversos nº 26/2026 por la ola de calor prevista a finales de julio de 2026.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "AEMET aviso especial (citada en resumen de la prensa y notas institucionales)",
+          "sourceUrl": "https://www.urjc.es/",
+          "sourceDate": "2026-07-25"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué deber figura entre las obligaciones del informador?",
+          "options": [
+            "Defender los intereses comerciales de la Corporación.",
+            "Priorizar la inmediatez sobre la verificación.",
+            "Ofrecer información rigurosa, neutral e imparcial.",
+            "Difundir opiniones sin contraste."
+          ],
+          "correctIndex": 2,
+          "explanation": "El Manual de Estilo de RTVE establece como obligación ofrecer información rigurosa, neutral e imparcial; las otras opciones contradicen sus principios.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de la Corporación RTVE (manualdeestilo.rtve.es)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/crtve/",
+          "sourceDate": "2010-12-21"
+        },
+        {
+          "prompt": "¿Qué órgano adoptó el 23 de julio de 2026 el vigésimo primer paquete de sanciones contra Rusia?",
+          "options": [
+            "El Consejo de la Unión Europea.",
+            "El Parlamento Europeo.",
+            "La Comisión Europea.",
+            "El Tribunal de Justicia de la Unión Europea."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier cita el comunicado oficial del Consilium que recoge la adopción, por el Consejo de la Unión Europea, del 21.º paquete de medidas restrictivas contra Rusia el 23 de julio de 2026.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "conflict",
+          "sourceTitle": "21st package of sanctions: EU hits Russian energy, financial services and crypto hard - Consilium",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2026/07/23/21st-package-of-sanctions-eu-hits-russian-energy-financial-services-and-crypto-hard/",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "¿Qué institución publicó la agenda de Felipe VI con actividades de apoyo a afectados entre el 24–27 de julio de 2026?",
+          "options": [
+            "Casa Real.",
+            "La Moncloa (Presidencia del Gobierno).",
+            "El Congreso de los Diputados.",
+            "El Ministerio del Interior."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier incluye la agenda publicada en la web oficial de la Casa de S.M. el Rey que recoge actividades de Felipe VI y la Reina entre el 24 y 27 de julio de 2026.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "politics",
+          "sourceTitle": "Casa Real — Actividades oficiales (agenda pública, julio 2026)",
+          "sourceUrl": "https://www.casareal.es/ES/Paginas/home.aspx",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "¿Qué documento aprobó el Consejo de Administración de RTVE el 23 de julio de 2010?",
+          "options": [
+            "Ley 17/2006.",
+            "Código de Autorregulación para la defensa de los derechos del menor.",
+            "III Convenio Colectivo de la Corporación RTVE.",
+            "Real Decreto‑ley 4/2018."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier recogen que el Consejo de Administración aprobó el Código de Autorregulación para la defensa de los derechos del menor el 23/07/2010.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Legislación y documentos de la Corporación RTVE — Código de Autorregulación (RTVE)",
+          "sourceUrl": "https://www.rtve.es/corporacion/legislacion/",
+          "sourceDate": "2010-07-23"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente la Presidencia del Consejo Europeo?",
+          "options": [
+            "Ursula von der Leyen.",
+            "Charles Michel.",
+            "Pedro Sánchez.",
+            "Roberta Metsola."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier incluye verificaciones institucionales y referencias a las presidencias de las instituciones europeas; Charles Michel es quien ocupa la Presidencia del Consejo Europeo en la fecha de verificación indicada.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "Consilium / European Council — President (verificación institucional)",
+          "sourceUrl": "https://www.consilium.europa.eu/",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "Según la Ley 31/1995, de Prevención de Riesgos Laborales, ¿qué obligación corresponde a las personas trabajadoras?",
+          "options": [
+            "Designar a los delegados de prevención.",
+            "Elaborar la evaluación de riesgos.",
+            "Cooperar en el cumplimiento de las obligaciones preventivas.",
+            "Aprobar las normas internas de la empresa."
+          ],
+          "correctIndex": 2,
+          "explanation": "La Ley 31/1995 establece entre las obligaciones de las personas trabajadoras la cooperación en el cumplimiento de las exigencias en materia de prevención de riesgos laborales.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE — Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+          "sourceUrl": "https://boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "Según la Comisión Europea, ¿qué práctica motivó las órdenes de corrección en las decisiones DMA contra Google del 23 de julio de 2026?",
+          "options": [
+            "Publicación de contenidos falsos.",
+            "Uso indebido de datos personales de ciudadanos.",
+            "Evasión fiscal en países de la UE.",
+            "Self‑preferencing en los resultados de búsqueda."
+          ],
+          "correctIndex": 3,
+          "explanation": "La comunicación oficial de la Comisión especifica que las decisiones exigían correcciones por prácticas de 'self‑preferencing' en Search y restricciones en Google Play.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "Commission fines Google €890 million for breaches of the Digital Markets Act",
+          "sourceUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-fines-google-eu890-million-breaches-digital-markets-act",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "¿En qué fecha se celebró la final de la Copa Mundial de la FIFA que ganó España en 2026?",
+          "options": [
+            "20 de julio de 2026.",
+            "19 de julio de 2026.",
+            "18 de julio de 2026.",
+            "21 de julio de 2026."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier recoge que España venció en la final el 19 de julio de 2026 y obtuvo el título ese día.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "sport",
+          "sourceTitle": "Cobertura internacional — Spain 1-0 Argentina (Ferran Torres, 106')",
+          "sourceUrl": "https://www.aljazeera.com/sports/2026/7/19/spain-battle-past-10-man-argentina-1-0-in-extra-time-to-win-2026-world-cup",
+          "sourceDate": "2026-07-19"
+        },
+        {
+          "prompt": "¿Qué servicio europeo suministra mapas y datos satelitales para la vigilancia de incendios citado en el dossier?",
+          "options": [
+            "EUMETSAT Fire Monitoring.",
+            "Galileo Emergency Service.",
+            "Copernicus Emergency Management Service (CEMS).",
+            "ESA Rapid Response Unit."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier señala que el Copernicus Emergency Management Service (CEMS) y los servicios del JRC proporcionaron mapeo y datos satelitales para el seguimiento de incendios.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Copernicus Emergency Management Service (CEMS) / ESA — Copernicus reporting on wildfires and satellite support",
+          "sourceUrl": "https://www.copernicus.eu/en; https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Feeling_the_heat_from_space",
+          "sourceDate": "2026-07-20"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué sección aborda específicamente el tratamiento de la violencia de género y la igualdad?",
+          "options": [
+            "Protocolo de archivo.",
+            "Técnicas redaccionales.",
+            "Guía de producción sonora.",
+            "Cuestiones sensibles."
+          ],
+          "correctIndex": 3,
+          "explanation": "El Manual de Estilo de RTVE incluye una sección titulada 'Cuestiones sensibles' que trata la violencia de género, igualdad y representación de colectivos vulnerables.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE — 'Cuestiones sensibles'",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "2010-12-21"
+        },
+        {
+          "prompt": "¿Qué instrumento estableció el Reglamento (UE) 2025/1106 del 27 de mayo de 2025?",
+          "options": [
+            "Security Action for Europe (SAFE).",
+            "European Defence Fund (EDF).",
+            "Permanent Structured Cooperation (PESCO).",
+            "European Peace Facility (EPF)."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier cita el Reglamento (UE) 2025/1106 que establece el instrumento 'Security Action for Europe' (SAFE) para apoyar adquisiciones industriales en defensa.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Council Regulation (EU) 2025/1106 establishing the Security Action for Europe (SAFE) — EUR-Lex",
+          "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2025/1106/oj/eng",
+          "sourceDate": "2025-05-27"
+        },
+        {
+          "prompt": "¿Qué comunidad autónoma fue citada en el dossier entre las afectadas por los incendios del 26–27 de julio de 2026?",
+          "options": [
+            "Andalucía.",
+            "Comunidad de Madrid.",
+            "Galicia.",
+            "Comunidad Valenciana."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier menciona ámbitos afectados por los incendios, entre ellos Madrid; las otras comunidades no se citan en el mismo contexto en la nota usada.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Mejoran los incendios en el centro y preocupa el de Castellón (EFE) / Resumen incendios en España (RTVE)",
+          "sourceUrl": "https://efe.com/espana/2026-07-27/mejora-fuego-incendios-espana-castellon/; https://www.rtve.es/noticias/20260726/incendios-espana-hoy-ultima-hora-directo/17169207.shtml",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según la Ley 17/2006, de la radio y la televisión de titularidad estatal, todos los siguientes son principios o obligaciones de la Corporación RTVE EXCEPTO:",
+          "options": [
+            "Garantizar el pluralismo informativo.",
+            "Promover la igualdad y la protección de menores.",
+            "Obtener beneficio económico como finalidad prioritaria.",
+            "Prestar un servicio público de comunicación audiovisual."
+          ],
+          "correctIndex": 2,
+          "explanation": "La Ley 17/2006 y el marco regulador subrayan el servicio público, el pluralismo y la protección de menores; no señalan la obtención de beneficio económico como finalidad prioritaria de RTVE.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal (BOE)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21821",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "En el contexto de los últimos cinco años, ¿qué suceso iniciado el 24 de febrero de 2022 figura como factor central de la agenda europea de seguridad?",
+          "options": [
+            "La cumbre climática de Glasgow.",
+            "La crisis política en Grecia.",
+            "El Brexit efectivo del Reino Unido.",
+            "La invasión rusa de Ucrania."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier indica que el inicio de la invasión rusa de Ucrania el 24/02/2022 es un factor estructural que condiciona la agenda europea de seguridad desde entonces.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Informes y cobertura internacional sobre la invasión rusa de Ucrania (24 Feb 2022)",
+          "sourceUrl": "https://eeas.europa.eu/; https://www.reuters.com/world/europe/",
+          "sourceDate": "2022-02-24"
+        }
+      ]
+    },
     {
       "id": "002",
       "title": "Examen 002",
