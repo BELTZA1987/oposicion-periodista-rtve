@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-29T13:08:10.694828+02:00",
+  "updatedAt": "2026-07-30T09:47:48.173277+02:00",
   "exams": [
+    {
+      "id": "004",
+      "title": "Examen 004",
+      "date": "2026-07-30",
+      "level": "Muy alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-07-30",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "¿Qué organismo publicó el Aviso Especial nº 28/2026 por ola de calor el 29 de julio de 2026?",
+          "options": [
+            "Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO).",
+            "Agencia Estatal de Meteorología (AEMET).",
+            "Instituto Geográfico Nacional (IGN).",
+            "Agencia Estatal de Seguridad Marítima (SASEMAR)."
+          ],
+          "correctIndex": 1,
+          "explanation": "El Aviso Especial nº 28/2026 fue publicado por la Agencia Estatal de Meteorología (AEMET) el 29/07/2026, según el boletín oficial de AEMET citado en el dossier.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "AEMET — Aviso especial. Ola de calor (29/07/2026)",
+          "sourceUrl": "https://www.aemet.es/es/eltiempo/prediccion/destacados/p5_t?tipo=p52tesp1",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "¿En qué fecha se registró el sismo de magnitud aproximada 7,1 en el sur de Japón?",
+          "options": [
+            "30/07/2026.",
+            "27/07/2026.",
+            "29/07/2026.",
+            "28/07/2026."
+          ],
+          "correctIndex": 3,
+          "explanation": "El sismo de magnitud estimada ~7.1 en el sur de Japón se registró el 28 de julio de 2026, según la cobertura de AP recogida en el dossier.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "AP — A 7.1 magnitude quake hits Japan's southern Kyushu island (28/07/2026)",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el artículo 32 de la Ley 17/2006, ¿qué instrumento debe fijar objetivos y aportaciones presupuestarias?",
+          "options": [
+            "Convenio marco de financiación autonómica.",
+            "Plan anual de medios de la Corporación RTVE.",
+            "Contrato‑programa entre el Gobierno y la Corporación RTVE.",
+            "Acuerdo de coordinación con la Comisión Nacional de los Mercados y la Competencia."
+          ],
+          "correctIndex": 2,
+          "explanation": "El artículo 32 de la Ley 17/2006 regula el contrato‑programa que debe fijar objetivos y aportaciones presupuestarias entre el Gobierno y RTVE, según el texto consolidado del BOE.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 17/2006, Artículo 32 (Contrato‑programa)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-9958",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente la Presidencia de la Junta de Andalucía?",
+          "options": [
+            "Susana Díaz.",
+            "Ximo Puig.",
+            "Juanma Moreno.",
+            "Juanfran Pérez Llorca."
+          ],
+          "correctIndex": 2,
+          "explanation": "Juanma Moreno fue investido presidente de la Junta de Andalucía el 2 de julio de 2026, según la nota institucional y la cobertura de EFE incluida en el dossier.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "Junta de Andalucía / EFE — Investidura de Juanma Moreno (02/07/2026)",
+          "sourceUrl": "https://www.juntadeandalucia.es/presidencia/portavoz/217249/juanma/moreno/investido/presidente/junta/andalucia/xiii/legislatura?pag=1",
+          "sourceDate": "2026-07-02"
+        },
+        {
+          "prompt": "¿Qué superficie aproximada había arrasado el incendio de La Vall d'Uixó según EFE el 27/07/2026?",
+          "options": [
+            "1.200 hectáreas.",
+            "8.500 hectáreas.",
+            "85.000 hectáreas.",
+            "3.400 hectáreas."
+          ],
+          "correctIndex": 1,
+          "explanation": "EFE informó el 27/07/2026 que el incendio en La Vall d'Uixó había arrasado en torno a 8.500 hectáreas, cifra consignada en el dossier con datos de autoridades autonómicas.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "EFE — El incendio de Vall d'Uixó afecta a 8.500 hectáreas",
+          "sourceUrl": "https://efe.com/espana/2026-07-27/incendio-castellon-tercer-dia-activo/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Tras el sismo en el sur de Japón, ¿qué sector industrial registró evacuaciones y paradas temporales?",
+          "options": [
+            "Industria petroquímica.",
+            "Industria automotriz.",
+            "Fabricación de sensores de imagen.",
+            "Sector textil."
+          ],
+          "correctIndex": 2,
+          "explanation": "La prensa técnica citada en el dossier indicó que el sismo afectó a una zona con fabricación de sensores de imagen y que varias plantas relacionadas evacuaron y pararon temporalmente.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "economy",
+          "sourceTitle": "DigitalCameraWorld — Plant evacuations after Japan M7.1 quake (28/07/2026)",
+          "sourceUrl": "https://www.digitalcameraworld.com/cameras/japans-7-1-magnitude-earthquake-hit-a-key-region-for-camera-sensor-manufacturing-as-sony-fujifilm-plants-evacuate",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿cuál es la primera obligación del periodista pese a la velocidad del medio?",
+          "options": [
+            "Confirmar la veracidad de aquello que se va a contar.",
+            "Publicar la primicia antes que otras cabeceras.",
+            "Priorizar la opinión editorial sobre la verificación.",
+            "Evitar recurrir a fuentes institucionales."
+          ],
+          "correctIndex": 0,
+          "explanation": "El Manual de Estilo de RTVE establece expresamente que la primera obligación del periodista es confirmar la veracidad de lo que se va a contar, cita tomada de la sección 'Medios interactivos'.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE — sección 'Medios interactivos'",
+          "sourceUrl": "https://manualdeestilo.rtve.es/medios-interactivos/",
+          "sourceDate": "2024-01-01"
+        },
+        {
+          "prompt": "¿Qué hizo el presidente del Gobierno, Pedro Sánchez, el 27 de julio de 2026 en relación con el incendio de La Vall d'Uixó?",
+          "options": [
+            "Designó un comisario europeo para emergencias.",
+            "Declaró el estado de alarma nacional.",
+            "Anunció la disolución del Parlamento.",
+            "Visitó el Puesto de Mando Avanzado (PMA)."
+          ],
+          "correctIndex": 3,
+          "explanation": "La Moncloa y la cobertura de EFE documentaron la visita de Pedro Sánchez al Puesto de Mando Avanzado del incendio en La Vall d'Uixó el 27/07/2026, según el dossier.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "conflict",
+          "sourceTitle": "La Moncloa / EFE — Sánchez visita el PMA en Castellón (27/07/2026)",
+          "sourceUrl": "https://www.lamoncloa.gob.es/multimedia/galeriasfotograficas/presidente/Paginas/2026/270726-sanchez-puesto-mando-avanzado-castellon.aspx",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según la delegada del Gobierno en la Comunitat Valenciana, ¿qué señaló el 26/07/2026 sobre el origen del fuego en La Vall d'Uixó?",
+          "options": [
+            "Que no parece haberse producido por causas naturales.",
+            "Que fue causado por un rayo.",
+            "Que se confirmó la autoría intencional.",
+            "Que se originó en una instalación industrial eléctrica."
+          ],
+          "correctIndex": 0,
+          "explanation": "El 26/07/2026 la delegada del Gobierno indicó que, aunque la investigación continuaba, el incendio 'no parece' haber comenzado por causas naturales, según EFE recogido en el dossier.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "recent_event",
+          "sourceTitle": "EFE — Gobierno: No parece que el fuego de La Vall d'Uixó comenzara por causas naturales (26/07/2026)",
+          "sourceUrl": "https://efe.com/comunidad-valenciana/2026-07-26/gobierno-no-parece-que-el-fuego-de-vall-duixo-comenzara-por-causas-naturales/",
+          "sourceDate": "2026-07-26"
+        },
+        {
+          "prompt": "La Ley 17/2006 define la misión de la Corporación RTVE como:",
+          "options": [
+            "Prestar un servicio público de radio y televisión de titularidad del Estado.",
+            "Gestionar exclusivamente actividades comerciales y de publicidad.",
+            "Actuar como órgano consultivo del Gobierno en comunicación.",
+            "Coordinar las programaciones de todas las televisiones privadas."
+          ],
+          "correctIndex": 0,
+          "explanation": "La Ley 17/2006 regula la Corporación RTVE y establece su misión de prestar un servicio público de radio y televisión de titularidad del Estado, según el texto consolidado del BOE citado en el dossier.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Boletín Oficial del Estado (BOE) — Ley 17/2006, consolidada",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-9958",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente la Presidencia de la Generalitat Valenciana?",
+          "options": [
+            "Carlos Mazón.",
+            "Ximo Puig.",
+            "Juanfran Pérez Llorca.",
+            "Isabel Bonig."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier recoge la verificación institucional de la biografía oficial de la Generalitat Valenciana que identifica a Juanfran Pérez Llorca como President de la Generalitat Valenciana en las fuentes consultadas.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "Generalitat Valenciana — biografía institucional (verificada)",
+          "sourceUrl": "https://www.gva.es/en/web/generalitat/president/biografia",
+          "sourceDate": "2025-12-02"
+        },
+        {
+          "prompt": "Según la Ley 31/1995, ¿qué derecho tiene la persona trabajadora ante un riesgo grave e inminente?",
+          "options": [
+            "Interrumpir su actividad y abandonar el lugar de trabajo.",
+            "Solicitar reducción salarial automática.",
+            "Exigir vacaciones retribuidas inmediatas.",
+            "Obtener indemnización por cese temporal."
+          ],
+          "correctIndex": 0,
+          "explanation": "La Ley 31/1995 reconoce al trabajador el derecho a interrumpir su actividad y abandonar el lugar de trabajo si existe riesgo grave e inminente para su vida o salud, según el texto consolidado del BOE.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE — Ley 31/1995, de Prevención de Riesgos Laborales (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "Según el comunicado del 23/07/2026, ¿qué sector fue uno de los objetivos del vigésimo primer paquete de sanciones de la UE a Rusia?",
+          "options": [
+            "Sector turístico.",
+            "Sector energético.",
+            "Sector cultural.",
+            "Sector deportivo."
+          ],
+          "correctIndex": 1,
+          "explanation": "El comunicado del Consejo de la UE del 23/07/2026 sobre el 21.º paquete de sanciones indica que uno de los objetivos principales fue el sector energético ruso, según la nota oficial incluida en el dossier.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "politics",
+          "sourceTitle": "Consilium — 21st package of sanctions: EU hits Russian energy, financial services and crypto hard (23/07/2026)",
+          "sourceUrl": "https://www.consilium.europa.eu/fr/press/press-releases/2026/07/23/21st-package-of-sanctions-eu-hits-russian-energy-financial-services-and-crypto-hard/",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "Según Copernicus, ¿qué servicio europeo proporciona mapas rápidos para emergencias como incendios?",
+          "options": [
+            "European Forest Fire Information System (EFFIS).",
+            "Copernicus Emergency Management Service (CEMS).",
+            "European Space Agency Emergency Hub.",
+            "Horizon Europe Crisis Unit."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier cita que el Copernicus Emergency Management Service (CEMS) proporciona mapas y productos de teledetección rápidos para incidentes como incendios; EFFIS es complementario, pero CEMS es el servicio de mapeo rápido mencionado.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "science",
+          "sourceTitle": "Copernicus Emergency Management Service / ArcGIS StoryMaps (CEMS activations)",
+          "sourceUrl": "https://storymaps.arcgis.com/stories/5944254cdd8f4a13bec93201ac199221",
+          "sourceDate": "2026-07-10"
+        },
+        {
+          "prompt": "¿Qué programa europeo suministra imágenes públicas para la cartografía de incendios citada en el dossier?",
+          "options": [
+            "EUMETSAT.",
+            "Galileo.",
+            "Copernicus.",
+            "Horizon Europe."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier indica que productos satelitales públicos del programa Copernicus (Sentinel, EMS) se emplean para cartografiar incendios y columnas de humo; por ello Copernicus es la respuesta correcta.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Copernicus EMS / EFFIS activations (summary storymaps & CEMS activations)",
+          "sourceUrl": "https://storymaps.arcgis.com/stories/175d875a5bc645de8808432ff7b4c33f",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿dónde se encuentran las guías sobre infancia, violencia y lenguaje no sexista?",
+          "options": [
+            "Boletines internos de la cadena privada.",
+            "Sección de Deportes del portal.",
+            "Área de Publicidad institucional.",
+            "Anexos y recursos del Manual de Estilo."
+          ],
+          "correctIndex": 3,
+          "explanation": "El Manual de Estilo de RTVE incluye anexos y guías (anexo 'Cuestiones sensibles', guías de lenguaje y protocolos) dedicados al tratamiento de infancia, violencia y lenguaje no sexista, según el índice del Manual citado en el dossier.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE — Anexos y recursos",
+          "sourceUrl": "https://manualdeestilo.rtve.es/anexos/",
+          "sourceDate": "2023-01-01"
+        },
+        {
+          "prompt": "Según el dossier, ¿qué acontecimiento iniciado en 2022 condiciona la agenda europea de seguridad y sanciones?",
+          "options": [
+            "La invasión rusa de Ucrania iniciada el 24/02/2022.",
+            "La crisis migratoria del Mediterráneo de 2018.",
+            "La salida del Reino Unido de la UE (Brexit).",
+            "La pandemia de COVID‑19 iniciada en 2020."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier identifica la invasión rusa de Ucrania iniciada el 24/02/2022 como uno de los hitos centrales de los últimos cinco años que condicionan la agenda europea en materia de sanciones, energía y defensa.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Consilium / Comunicados oficiales y resúmenes (2022–2026)",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/?keyword=sanctions",
+          "sourceDate": "2022-02-24"
+        },
+        {
+          "prompt": "¿Qué autorización adoptaron el 27 de julio para vecinos de cuatro barrios de La Vall d'Uixó?",
+          "options": [
+            "Prohibición de retorno hasta nueva orden.",
+            "Desalojo definitivo y reubicación obligatoria.",
+            "Suspensión de todos los servicios públicos en la localidad.",
+            "Retorno parcial a domicilios con confinamiento nocturno."
+          ],
+          "correctIndex": 3,
+          "explanation": "El 27/07/2026 las autoridades autorizaron el retorno parcial de vecinos de cuatro barrios de La Vall d'Uixó, con medidas de confinamiento nocturno, según la crónica de EFE incluida en el dossier.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "EFE — El incendio de Vall d'Uixó afecta a 8.500 hectáreas (27/07/2026)",
+          "sourceUrl": "https://efe.com/espana/2026-07-27/incendio-castellon-tercer-dia-activo/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "¿Qué documento regula la defensa de los derechos del menor en los contenidos audiovisuales de RTVE?",
+          "options": [
+            "Real Decreto‑ley 4/2018 sobre designación del Consejo de RTVE.",
+            "Código de Autorregulación para la Defensa de los Derechos del Menor (23/07/2010).",
+            "Ley 31/1995 de Prevención de Riesgos Laborales.",
+            "Resolución del Parlamento Europeo sobre libertad de medios (2020)."
+          ],
+          "correctIndex": 1,
+          "explanation": "El Código de Autorregulación del 23 de julio de 2010 regula la defensa de los derechos del menor en los contenidos audiovisuales de la Corporación RTVE, como figura en el temario y el dossier.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Código de Autorregulación para la Defensa de los Derechos del Menor (RTVE, 23/07/2010).",
+          "sourceUrl": "https://manualdeestilo.rtve.es/anexos/",
+          "sourceDate": "2010-06-23"
+        },
+        {
+          "prompt": "Según el dossier, ¿qué proceso ha motivado desde 2022 la intensificación de sanciones y medidas de defensa en la UE?",
+          "options": [
+            "La ampliación de la UE a nuevos miembros en 2024.",
+            "La crisis financiera global de 2020.",
+            "La reforma del Tratado de Lisboa.",
+            "La invasión rusa de Ucrania iniciada el 24/02/2022."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier señala que desde 2022 la invasión rusa de Ucrania (inicio 24/02/2022) ha condicionado la intensificación de sanciones, la seguridad energética y las iniciativas de gasto en defensa en la UE.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "politics",
+          "sourceTitle": "Consilium / Comunicados oficiales y resúmenes (2022–2026)",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/?keyword=sanctions",
+          "sourceDate": "2022-02-24"
+        }
+      ]
+    },
     {
       "id": "003",
       "title": "Examen 003",
