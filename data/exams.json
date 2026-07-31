@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T09:47:48.173277+02:00",
+  "updatedAt": "2026-07-31T15:17:24.238120+02:00",
   "exams": [
+    {
+      "id": "005",
+      "title": "Examen 005",
+      "date": "2026-07-31",
+      "level": "Muy alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-07-31T15:17:24+02:00",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "¿Qué movilización se llevó a cabo en España ante los incendios de finales de julio de 2026?",
+          "options": [
+            "Movilización de medios aéreos y terrestres.",
+            "Envío exclusivo de equipos médicos.",
+            "Cierre temporal de aeropuertos internacionales.",
+            "Suspensión de competencias autonómicas en gestión forestal."
+          ],
+          "correctIndex": 0,
+          "explanation": "Las coberturas de EFE y Europa Press recogen que las comunidades y el ministerio competente movilizaron medios aéreos y terrestres para combatir los incendios; los otros supuestos no se documentan como respuesta general en las fuentes citadas.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "society",
+          "sourceTitle": "Europa Press / EFE — Cobertura sobre incendios en España (finales de julio 2026)",
+          "sourceUrl": "https://www.europapress.es/sociedad/noticia-ultima-hora-incendios-forestales-espana-directo-focos-activos-zonas-afectadas-evacuaciones-20260724081326.html https://efe.com/",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "¿Qué organismo emitió y luego levantó un aviso de tsunami tras el seísmo en Kyushu (28/07/2026)?",
+          "options": [
+            "United States Geological Survey (USGS).",
+            "Japan Meteorological Agency (JMA).",
+            "National Oceanic and Atmospheric Administration (NOAA).",
+            "China Meteorological Administration."
+          ],
+          "correctIndex": 1,
+          "explanation": "Reuters y otras agencias citan a la Japan Meteorological Agency (JMA) como la entidad que emitió y posteriormente levantó el aviso/asesoramiento de tsunami tras el seísmo; USGS y NOAA son referencias sísmicas distintas y no emitieron ese aviso para Japón en las fuentes consultadas.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "Reuters — Japan lifts tsunami advisory issued after strong quake in country's southwest",
+          "sourceUrl": "https://www.reuters.com/article/idUSKBN2ZK0X1",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el BOE, ¿qué ley modificó la Ley 17/2006 para reforzar la independencia de la Corporación RTVE?",
+          "options": [
+            "Ley 13/2022, de 7 de julio.",
+            "Ley 8/2009, de 28 de agosto.",
+            "Ley 5/2017, de 29 de septiembre.",
+            "Ley 31/1995, de 8 de noviembre."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto consolidado en el BOE refleja que la Ley 5/2017 (29/09/2017) modificó la Ley 17/2006 para recuperar la independencia de la Corporación RTVE; las otras leyes citadas tienen ámbitos distintos (financiación, comunicación audiovisual, prevención laboral).",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 5/2017 (modificación de la Ley 17/2006)",
+          "sourceUrl": "https://www.boe.es/buscar/pdf/2017/BOE-A-2017-11091-consolidado.pdf",
+          "sourceDate": "2017-09-29"
+        },
+        {
+          "prompt": "¿Quién es actualmente Presidenta de la Comisión Europea?",
+          "options": [
+            "Roberta Metsola.",
+            "Ursula von der Leyen.",
+            "Charles Michel.",
+            "António Guterres."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las páginas oficiales de las instituciones europeas verificadas al 31/07/2026 indican que Ursula von der Leyen es la Presidenta de la Comisión Europea; Metsola y Michel ocupan otros cargos en instituciones europeas, y Guterres es Secretario General de la ONU.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Commission / European Council / European Parliament / United Nations (páginas oficiales)",
+          "sourceUrl": "https://employment-social-affairs.ec.europa.eu/european-employment-and-social-rights-forum/speakers-2026/ursula-von-der-leyen_en https://www.consilium.europa.eu/en/council-eu/ https://www.europarl.europa.eu/news/en/press-room/20240710IPR22805/roberta-metsola-rieletta-presidente-del-parlamento-europeo https://www.un.org/en/",
+          "sourceDate": "2026-07-31"
+        },
+        {
+          "prompt": "Según AP, ¿qué anunció la Casa Blanca el 24 de julio de 2026 tras las multas DMA impuestas por la UE?",
+          "options": [
+            "Retirada temporal del embajador en Bruselas.",
+            "Imposición de aranceles recíprocos.",
+            "Apertura de una investigación sobre prácticas comerciales de la UE.",
+            "Creación de un diálogo regulatorio conjunto."
+          ],
+          "correctIndex": 2,
+          "explanation": "La cobertura de AP del 24/07/2026 recoge que la Casa Blanca anunció la apertura de una investigación sobre prácticas comerciales de la UE en respuesta a las sanciones/multas a empresas tecnológicas; las otras medidas no fueron las comunicadas por la fuente citada.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "AP News — Trump says the US will investigate EU trade practices, claiming the bloc unfairly fined tech giants",
+          "sourceUrl": "https://apnews.com/article/2e125ac0d3c1ac7a96c9194a372ba47e",
+          "sourceDate": "2026-07-24"
+        },
+        {
+          "prompt": "¿Cómo se denomina la nube generada por los incendios de Gironde que produjo rayos y propagó nuevos focos?",
+          "options": [
+            "Cumulonimbus.",
+            "Pyrocumulonimbus.",
+            "Stratus.",
+            "Nimbostratus."
+          ],
+          "correctIndex": 1,
+          "explanation": "Los reportes técnicos y las crónicas periodísticas sobre Gironde describen la formación de una pyrocumulonimbus (nube piroconvectiva) que produjo rayos y facilitó la ignición de nuevos focos; los otros términos son tipos de nubes, pero no describen el fenómeno piroconvectivo observado.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Fortune / AP — reportes sobre pyrocumulonimbus en incendios de Gironde",
+          "sourceUrl": "https://fortune.com/2026/07/27/bordeaux-wildfire-firestorm-evacuations-france-lightning-apocalypse/ https://apnews.com/article/0880421447ebd9ad4d2e505b37c54181",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué materia incluye la sección 'Cuestiones sensibles'?",
+          "options": [
+            "Normativa de publicidad comercial.",
+            "Gestión económica de la Corporación.",
+            "Protección de la infancia.",
+            "Política de contratación de personal."
+          ],
+          "correctIndex": 2,
+          "explanation": "El Manual de Estilo de RTVE, en su sección 'Cuestiones sensibles', desarrolla pautas sobre protección de la infancia, tratamiento de víctimas y violencia de género; las otras opciones no corresponden a esa sección según el documento oficial.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE — sección 'Cuestiones sensibles' (página oficial)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "¿En qué departamento francés se evacuaron más de 200.000 personas por el incendio de finales de julio de 2026?",
+          "options": [
+            "Landes.",
+            "Gironde.",
+            "Dordogne.",
+            "Pyrénées-Atlantiques."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las agencias y reportes (AP, Reuters, EFE) documentan que el gran incendio provocó evacuaciones masivas en el departamento de Gironde; las otras provincias del suroeste aparecen en cobertura regional pero no con la cifra citada por las fuentes principales.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "conflict",
+          "sourceTitle": "AP News — A 2:47 a.m. alert, a rabbit and 220,000 evacuees as France's wildfire rages on",
+          "sourceUrl": "https://apnews.com/article/13b3173c427388881108c58510312993",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "¿Qué tipo de apoyo coordinó la Unión Europea para responder a los grandes incendios de finales de julio de 2026?",
+          "options": [
+            "Restricciones detalladas a la movilidad transfronteriza.",
+            "Sólo financiación de emergencia.",
+            "Envío de medios aéreos y apoyo internacional.",
+            "Despliegue de fuerzas armadas para labores policiales."
+          ],
+          "correctIndex": 2,
+          "explanation": "Las coberturas y comunicados del Consilium y la Comisión registran coordinación europea en el envío y uso de medios aéreos y apoyo internacional para reforzar la respuesta a incendios; las otras opciones no coinciden con las medidas descritas en las fuentes.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "institutions",
+          "sourceTitle": "Reuters / AP / declaraciones de la Comisión y autoridades nacionales",
+          "sourceUrl": "https://www.reuters.com/ https://apnews.com/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según el BOE, ¿qué ley regula la financiación de la Corporación de Radio y Televisión Española?",
+          "options": [
+            "Ley 13/2022, de 7 de julio.",
+            "Ley 17/2006, de 5 de junio.",
+            "Ley 5/2017, de 29 de septiembre.",
+            "Ley 8/2009, de 28 de agosto."
+          ],
+          "correctIndex": 3,
+          "explanation": "El texto consolidado y la documentación oficial identifican la Ley 8/2009 (28/08/2009) como la norma relativa a la financiación de la Corporación RTVE; las otras leyes tienen objeto distinto en el marco regulador audiovisual y laboral.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 8/2009, de 28 de agosto, de financiación de la Corporación de Radio y Televisión Española",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-13558",
+          "sourceDate": "2009-08-28"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente la Presidencia del Parlamento Europeo?",
+          "options": [
+            "Charles Michel.",
+            "Ursula von der Leyen.",
+            "Roberta Metsola.",
+            "Manfred Weber."
+          ],
+          "correctIndex": 2,
+          "explanation": "La verificación institucional incluida en el dossier indica que Roberta Metsola ejerce la Presidencia del Parlamento Europeo en la fecha de corte del examen; von der Leyen y Michel son presidentes de otros órganos y Weber no ocupa la presidencia del Parlamento en las fuentes consultadas.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Commission / European Council / European Parliament (páginas oficiales)",
+          "sourceUrl": "https://www.europarl.europa.eu/news/en/press-room/20240710IPR22805/roberta-metsola-rieletta-presidente-del-parlamento-europeo",
+          "sourceDate": "2026-07-31"
+        },
+        {
+          "prompt": "¿Cuál es la norma básica española que regula la Prevención de Riesgos Laborales?",
+          "options": [
+            "Ley 5/2017, de 29 de septiembre.",
+            "Ley 17/2006, de 5 de junio.",
+            "Ley 8/2009, de 28 de agosto.",
+            "Ley 31/1995, de 8 de noviembre."
+          ],
+          "correctIndex": 3,
+          "explanation": "La Ley 31/1995 (8/11/1995) es la norma básica española sobre prevención de riesgos laborales citada en el temario y en el dossier; las demás leyes tratan de medios audiovisuales y financiación, no de PRL.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE — Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "¿Qué organismo adoptó las decisiones que multaron a Google por infracciones del Digital Markets Act el 23 de julio de 2026?",
+          "options": [
+            "Comisión Europea.",
+            "Consejo de la Unión Europea.",
+            "Parlamento Europeo.",
+            "Tribunal de Justicia de la Unión Europea."
+          ],
+          "correctIndex": 0,
+          "explanation": "La nota oficial de prensa del 23/07/2026 publicada por la Comisión Europea comunica las decisiones y multas impuestas a Google bajo el DMA; el Consejo o Parlamento no son las instancias que adoptaron esas decisiones administrativas en las fuentes citadas.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "politics",
+          "sourceTitle": "European Commission — 'Commission fines Google €890 million for breaches of the Digital Markets Act' (press release)",
+          "sourceUrl": "https://digital-markets-act.ec.europa.eu/commission-fines-google-eur890-million-breaches-digital-markets-act-2026-07-23_en",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "Según la Comisión Europea, ¿qué acompañó las decisiones DMA sobre Google en julio de 2026?",
+          "options": [
+            "Financiación europea por €150.000 millones.",
+            "Aprobación inmediata del AI Act sin consulta.",
+            "Retirada del Digital Services Act.",
+            "Orientaciones y consultas sobre interoperabilidad de IA."
+          ],
+          "correctIndex": 3,
+          "explanation": "La Comisión difundió consultas y orientaciones para asegurar interoperabilidad de servicios de IA en el seguimiento del cumplimiento del DMA; las otras opciones no se corresponden con las medidas documentadas en la nota oficial citada.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "economy",
+          "sourceTitle": "European Commission — nota sobre consultas e iniciativas relacionadas con cumplimiento del DMA",
+          "sourceUrl": "https://digital-markets-act.ec.europa.eu/dma100220-consultation-proposed-measures-interoperability-google-android-article-67-dma_en",
+          "sourceDate": "2026-05-13"
+        },
+        {
+          "prompt": "¿Qué tipo de instalación industrial sufrió la caída de una chimenea tras el seísmo en Kyushu del 28/07/2026?",
+          "options": [
+            "Central nuclear.",
+            "Planta papelera.",
+            "Refinería de petróleo.",
+            "Central hidroeléctrica."
+          ],
+          "correctIndex": 1,
+          "explanation": "Las crónicas y material gráfico iniciales citadas por AP describen la caída de una chimenea en una planta papelera tras el seísmo; no se documentó en las fuentes consultadas la afectación de una central nuclear, refinería o hidroeléctrica en el mismo informe inicial.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "AP News — Powerful earthquake strikes southern Japan, causing destruction",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué principio figura entre las obligaciones de los informativos?",
+          "options": [
+            "Verificación de la información.",
+            "Sensacionalismo para captar audiencia.",
+            "Publicación inmediata sin contrastar.",
+            "Uso preferente de fuentes anónimas."
+          ],
+          "correctIndex": 0,
+          "explanation": "El Manual de Estilo de RTVE establece la verificación como principio obligatorio en la práctica informativa; las otras opciones contradicen las pautas y aparecen como prácticas no aceptables en el manual oficial.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE (sitio oficial)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "¿Cómo se denomina el instrumento financiero propuesto en el White Paper 'Readiness 2030' destinado a facilitar préstamos y financiación conjunta para defensa?",
+          "options": [
+            "SAFE (Security Action for Europe).",
+            "European Defence Fund.",
+            "CEMS (Copernicus Emergency Management Service).",
+            "EFFIS (European Forest Fire Information System)."
+          ],
+          "correctIndex": 0,
+          "explanation": "Los documentos oficiales del periodo 2025 citan al instrumento SAFE (Security Action for Europe) como pilar financiero propuesto para facilitar financiación y préstamos conjuntos para defensa en el marco Readiness 2030; las otras opciones son iniciativas distintas (EDF, CEMS, EFFIS) con finalidades diferentes.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "institutions",
+          "sourceTitle": "European Commission / Consilium — 'ReArm Europe Plan / Readiness 2030' y SAFE (documentos oficiales)",
+          "sourceUrl": "https://commission.europa.eu/topics/defence/future-european-defence_en https://www.consilium.europa.eu/en/press/press-releases/2025/05/27/safe-council-adopts-150-billion-boost-for-joint-procurement-on-european-security-and-defence/",
+          "sourceDate": "2025-03-19"
+        },
+        {
+          "prompt": "¿Qué medida sanitaria se activó ante la ola de calor y los incendios según el dossier?",
+          "options": [
+            "Retirada de personal sanitario voluntario.",
+            "Prohibición de venta de productos alimentarios.",
+            "Cierre total de centros sanitarios.",
+            "Avisos de salud pública y recomendaciones."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier recoge que la ola de calor y los incendios llevaron a la activación de avisos de salud pública y a recomendaciones por parte de autoridades sanitarias; las demás medidas no aparecen en las fuentes como respuestas generales ante la crisis.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Ministerios autonómicos y nacionales / AP / EFE (coberturas sobre medidas sanitarias)",
+          "sourceUrl": "https://www.europapress.es/ https://apnews.com/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Franjas de protección para menores recogidas en el Manual de Estilo de RTVE...",
+          "options": [
+            "6:00–22:00.",
+            "8:00–20:00.",
+            "6:00–20:00.",
+            "7:00–23:00."
+          ],
+          "correctIndex": 0,
+          "explanation": "El Manual de Estilo de RTVE especifica franjas de protección horaria para menores que abarcan de 6:00 a 22:00; las otras alternativas no coinciden con la hora citada en el documento oficial.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "Manual de Estilo RTVE — sección 'Niños y adolescentes' y 'Cuestiones sensibles'",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "documento vigente"
+        },
+        {
+          "prompt": "¿Qué tres instrumentos regulatorios de la UE han transformado la regulación de plataformas digitales en los últimos años?",
+          "options": [
+            "AI Act; GDPR; eIDAS Regulation.",
+            "Digital Markets Act; GDPR; ePrivacy Directive.",
+            "Digital Services Act; GDPR; NIS2 Directive.",
+            "Digital Markets Act; Digital Services Act; AI Act."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier y la documentación oficial de la Comisión resumen que el DMA, el DSA y el AI Act constituyen el paquete regulatorio reciente que está transformando la regulación de grandes plataformas en la UE; las otras combinaciones incluyen instrumentos relevantes pero no configuran el trío señalado en los documentos citados.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "politics",
+          "sourceTitle": "European Commission / EUR-Lex — DMA, DSA, AI Act (documentos y comunicados oficiales)",
+          "sourceUrl": "https://ec.europa.eu/info/strategy/priorities-2019-2024_en https://eur-lex.europa.eu/",
+          "sourceDate": "2024-04-01"
+        }
+      ]
+    },
     {
       "id": "004",
       "title": "Examen 004",
