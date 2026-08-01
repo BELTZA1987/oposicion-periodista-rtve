@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-31T15:17:24.238120+02:00",
+  "updatedAt": "2026-08-01T13:54:10.870008+02:00",
   "exams": [
+    {
+      "id": "006",
+      "title": "Examen 006",
+      "date": "2026-08-01",
+      "level": "Muy alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-08-01T13:54:10.870008+02:00",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "¿Qué declaró el Gobierno español a finales de julio de 2026 para territorios afectados por los incendios?",
+          "options": [
+            "Zonas gravemente afectadas.",
+            "Estado de alarma.",
+            "Estado de excepción.",
+            "Situación de atención prioritaria."
+          ],
+          "correctIndex": 0,
+          "explanation": "La Moncloa informó que el Gobierno aprobó la declaración de 'zonas gravemente afectadas' para habilitar ayudas y medidas especiales, según la nota oficial del 27/07/2026.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "La Moncloa – Referencias del Consejo de Ministros (Gobierno de España)",
+          "sourceUrl": "https://www.lamoncloa.gob.es/",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "¿Qué adoptó el Consejo de la Unión Europea el 23 de julio de 2026?",
+          "options": [
+            "El 21.º paquete de sanciones contra Rusia.",
+            "Un nuevo marco de cooperación fiscal con Turquía.",
+            "La adhesión inmediata de Ucrania a la Unión.",
+            "Un acuerdo de libre comercio con Mercosur."
+          ],
+          "correctIndex": 0,
+          "explanation": "El comunicado oficial del Consilium del 23/07/2026 recoge la adopción del 21.º paquete de sanciones dirigido a sectores energéticos y financieros relacionados con Rusia.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "Council of the European Union – Press release (23 July 2026)",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "Según el texto consolidado de la Ley 17/2006, ¿qué instrumento entre el Gobierno y RTVE fija objetivos y aportaciones anuales?",
+          "options": [
+            "Plan plurianual de medios.",
+            "Mandato‑marco.",
+            "Contrato‑programa.",
+            "Convenio de financiación."
+          ],
+          "correctIndex": 2,
+          "explanation": "El texto consolidado de la Ley 17/2006 define el contrato‑programa como el instrumento que establece objetivos, aportaciones anuales y control económico‑financiero de RTVE.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE – Texto consolidado Ley 17/2006 (RTVE)",
+          "sourceUrl": "https://www.boe.es/buscar/pdf/2006/BOE-A-2006-9958-consolidado.pdf",
+          "sourceDate": "2006-06-06"
+        },
+        {
+          "prompt": "¿Quién es actualmente el Presidente del Banco Central Europeo?",
+          "options": [
+            "Christine Lagarde.",
+            "Mario Draghi.",
+            "Jens Weidmann.",
+            "Luis de Guindos."
+          ],
+          "correctIndex": 0,
+          "explanation": "Christine Lagarde figura como Presidenta del Banco Central Europeo en la institución y en comunicados oficiales durante el periodo en cuestión; es la titular del cargo en ejercicio.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Central Bank – Información institucional",
+          "sourceUrl": "https://www.ecb.europa.eu/",
+          "sourceDate": "2026-08-01"
+        },
+        {
+          "prompt": "¿Qué importe total comunicó la Comisión Europea que multaba a Google el 23 de julio de 2026 por incumplimientos del DMA?",
+          "options": [
+            "550 millones de euros.",
+            "890 millones de euros.",
+            "1 200 millones de euros.",
+            "250 millones de euros."
+          ],
+          "correctIndex": 1,
+          "explanation": "La nota de prensa de la Comisión del 23/07/2026 indicó un importe total comunicado de 890 millones de euros y medidas correctoras en las decisiones DMA.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "European Commission – press release (Digital Markets Act)",
+          "sourceUrl": "https://digital-markets-act.ec.europa.eu/commission-fines-google-eur890-million-breaches-digital-markets-act-2026-07-23_en",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "Sensores Sentinel empleados por Copernicus en la delineación y valoración de daños por incendios:",
+          "options": [
+            "Sentinel‑1 y Sentinel‑5P.",
+            "Sentinel‑1 y Sentinel‑2.",
+            "Sentinel‑3 y Sentinel‑5P.",
+            "Sentinel‑2 y Sentinel‑3."
+          ],
+          "correctIndex": 3,
+          "explanation": "El manual del servicio Copernicus EMS indica que los productos de cartografía rápida para incendios se fundamentan habitualmente en imágenes ópticas y radar, citando Sentinel‑2 y Sentinel‑3 entre los sensores operativos.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Copernicus EMS / JRC – publicaciones y guías técnicas",
+          "sourceUrl": "https://emergency.copernicus.eu/mapping/ems/online-manual-rapid-mapping-products",
+          "sourceDate": "2020-08-31"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué capítulo incluye pautas obligatorias para el tratamiento de menores y cuestiones sensibles?",
+          "options": [
+            "Normas tipográficas.",
+            "Cuestiones sensibles.",
+            "Procedimientos técnicos.",
+            "Programación y parrilla."
+          ],
+          "correctIndex": 1,
+          "explanation": "El Manual de Estilo de RTVE contiene un capítulo llamado 'Cuestiones sensibles' con pautas sobre menores, horarios de protección y tratamiento de violencia, según la página oficial.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE – sección 'Cuestiones sensibles'",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "2026-08-01"
+        },
+        {
+          "prompt": "Tras el seísmo del 28 de julio de 2026 en Kyushu, ¿qué aviso se emitió y posteriormente se levantó?",
+          "options": [
+            "Alerta de contaminación industrial.",
+            "Aviso de erupción volcánica.",
+            "Aviso de tsunami.",
+            "Prohibición de navegación regional."
+          ],
+          "correctIndex": 2,
+          "explanation": "La cobertura de agencias del 28/07/2026 recoge que se emitió un aviso de tsunami tras el sismo en Kyushu, que fue levantado horas después según la Agencia Meteorológica japonesa y AP.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "conflict",
+          "sourceTitle": "Associated Press (AP) - cobertura del seísmo en Kyushu",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según la Secretaría General de Protección Civil, ¿cuántos episodios catastróficos se habían producido hasta el 27 de julio de 2026?",
+          "options": [
+            "305.",
+            "150.",
+            "87.",
+            "211."
+          ],
+          "correctIndex": 3,
+          "explanation": "La nota de prensa de la Secretaría General de Protección Civil del 27/07/2026 informó de 211 episodios catastróficos (mayoritariamente incendios) en el periodo citado.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Secretaría General de Protección Civil y Emergencias – nota de prensa",
+          "sourceUrl": "https://www.proteccioncivil.es/sala-de-prensa/notas-prensa/detalle-nota-prensa/-/asset_publisher/SMDHHc3ndAQ8/?p_r_p_assetEntryId=544693",
+          "sourceDate": "2026-07-27"
+        },
+        {
+          "prompt": "Según la Ley 17/2006, ¿qué órgano de RTVE debe velar por la independencia y objetividad informativa?",
+          "options": [
+            "Dirección de Programas.",
+            "Consejo de Informativos.",
+            "Secretaría General Técnica.",
+            "Patronato de RTVE."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto consolidado de la Ley 17/2006 atribuye funciones de velar por la independencia y la objetividad a los Consejos de Informativos dentro de la Corporación RTVE.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "institutions",
+          "sourceTitle": "BOE – Ley 17/2006 (texto consolidado), artículos sobre Consejo de Informativos",
+          "sourceUrl": "https://www.boe.es/buscar/pdf/2006/BOE-A-2006-9958-consolidado.pdf",
+          "sourceDate": "2006-06-06"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente la Presidencia del Parlamento Europeo?",
+          "options": [
+            "Ska Keller.",
+            "Manfred Weber.",
+            "David Sassoli.",
+            "Roberta Metsola."
+          ],
+          "correctIndex": 3,
+          "explanation": "Roberta Metsola figura como Presidenta del Parlamento Europeo en los listados institucionales vigentes en el periodo de examen; es la persona que desempeña ese cargo.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Parliament – Información institucional",
+          "sourceUrl": "https://www.europarl.europa.eu/",
+          "sourceDate": "2026-08-01"
+        },
+        {
+          "prompt": "Según la Ley 31/1995, ¿qué derecho corresponde a la persona trabajadora ante un riesgo grave e inminente?",
+          "options": [
+            "Derecho a reducción automática de jornada.",
+            "Derecho a interrumpir la actividad y abandonar el lugar de trabajo.",
+            "Derecho a asistencia legal retribuida.",
+            "Derecho a indemnización inmediata."
+          ],
+          "correctIndex": 1,
+          "explanation": "La Ley 31/1995 reconoce el derecho de la persona trabajadora a interrumpir la actividad y abandonar el puesto ante un riesgo grave e inminente, según el texto consolidado citado en el temario.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE / Ministerio de Trabajo – Ley 31/1995 (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "¿Qué agencia internacional publicó la cobertura sobre el seísmo del 28 de julio de 2026 en Kyushu?",
+          "options": [
+            "Agence France‑Presse (AFP).",
+            "Reuters.",
+            "Associated Press (AP).",
+            "Efe."
+          ],
+          "correctIndex": 2,
+          "explanation": "La cobertura citada en el dossier sobre el seísmo de Kyushu procede de Associated Press (AP), que publicó informes sobre el movimiento y el aviso de tsunami.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "recent_event",
+          "sourceTitle": "Associated Press (AP) - cobertura del seísmo en Kyushu",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según recuentos provisionales a 27–28 de julio de 2026, ¿aproximadamente cuántas hectáreas habían ardido en España desde comienzos de año?",
+          "options": [
+            "95 000 hectáreas.",
+            "120 000 hectáreas.",
+            "200 000 hectáreas.",
+            "172 000 hectáreas."
+          ],
+          "correctIndex": 3,
+          "explanation": "Informes periodísticos y partes oficiales citados el 27‑28/07/2026 recogen cifras provisionales próximas a 172 000–174 000 ha; la cifra usada en el dossier es 172 000 ha como estimación referida.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "society",
+          "sourceTitle": "Europa Press / El País – recopilación de partes oficiales (cortes de 27–28 julio 2026)",
+          "sourceUrl": "https://elpais.com/espana/2026-07-28/ultima-hora-de-los-incendios-forestales-en-espana-en-directo.html",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "¿Qué isla del suroeste de Japón sufrió un seísmo de magnitud aproximada 7,1 el 28 de julio de 2026?",
+          "options": [
+            "Kyushu.",
+            "Honshu.",
+            "Hokkaido.",
+            "Shikoku."
+          ],
+          "correctIndex": 0,
+          "explanation": "El informe de agencias sobre el sismo del 28/07/2026 sitúa el epicentro en el sur de la isla de Kyushu, en las prefecturas del sudoeste japonés.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Associated Press (AP) - cobertura del seísmo en Kyushu",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué medida aparece como protección específica para la infancia en contenidos audiovisuales?",
+          "options": [
+            "Exención de responsabilidad editorial.",
+            "Franjas horarias de protección y clasificaciones para menores.",
+            "Publicidad dirigida exclusiva a adultos.",
+            "Prohibición total de noticias con menores."
+          ],
+          "correctIndex": 1,
+          "explanation": "El Manual de Estilo y el Código de Autorregulación de RTVE recogen franjas de protección y clasificaciones como medidas para la defensa de los derechos del menor.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE – referencias y anexos (Código de 2010)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/anexos/",
+          "sourceDate": "2010-07"
+        },
+        {
+          "prompt": "¿Qué instrumento financiero se propuso en el White Paper 'Readiness 2030' para facilitar préstamos y compras conjuntas en defensa?",
+          "options": [
+            "SAFE (Security Action for Europe).",
+            "EDF (European Defence Fund).",
+            "EFSF (European Financial Stability Facility).",
+            "ESM‑Defensa."
+          ],
+          "correctIndex": 0,
+          "explanation": "El White Paper 'Readiness 2030' presentado en marzo de 2025 incluyó la propuesta del instrumento SAFE (Security Action for Europe) para facilitar préstamos y compras conjuntas en defensa.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "politics",
+          "sourceTitle": "European Commission / Consilium – White Paper Readiness 2030",
+          "sourceUrl": "https://www.consilium.europa.eu/en/policies/european-defence-readiness/",
+          "sourceDate": "2025-03-19"
+        },
+        {
+          "prompt": "¿Qué medida extraordinaria de protección social incluyó el Real Decreto‑ley aprobado a finales de julio de 2026 para trabajadores afectados por los incendios?",
+          "options": [
+            "Exención fiscal permanente para residentes.",
+            "Subsidio universal temporal por desempleo.",
+            "Bonificación de la cotización empresarial del 100%.",
+            "Prestación extraordinaria por emergencia extrema gestionada por el SEPE."
+          ],
+          "correctIndex": 3,
+          "explanation": "La cobertura del Consejo de Ministros y agencias a finales de julio de 2026 señala la creación de una 'prestación extraordinaria por emergencia extrema' gestionada por el SEPE para trabajadores afectados.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Europa Press / Moncloa – cobertura y referencia del Consejo de Ministros (27‑28 julio 2026)",
+          "sourceUrl": "https://www.europapress.es/",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según el texto consolidado de la Ley 17/2006, ¿qué duración se señala para la vigencia del mandato‑marco?",
+          "options": [
+            "Seis años.",
+            "Cuatro años.",
+            "Nueve años.",
+            "Doce años."
+          ],
+          "correctIndex": 2,
+          "explanation": "El consolidado de la Ley 17/2006 especifica que el mandato‑marco tiene una vigencia señalada de nueve años, según las disposiciones y el artículo referido en el BOE.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE – Ley 17/2006 (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/pdf/2006/BOE-A-2006-9958-consolidado.pdf",
+          "sourceDate": "2006-06-06"
+        },
+        {
+          "prompt": "En el contexto de los últimos cinco años, ¿qué suceso iniciado el 24 de febrero de 2022 condiciona la agenda europea de seguridad?",
+          "options": [
+            "La crisis migratoria del Mediterráneo.",
+            "El Brexit y su implementación.",
+            "La invasión rusa de Ucrania.",
+            "La pandemia de COVID‑19."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier recoge que la agresión militar de Rusia a Ucrania iniciada el 24/02/2022 ha sido un elemento estructurante de la política de seguridad europea y de los paquetes de respuesta.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Consilium / Comunicados oficiales y cronología de medidas desde 2022",
+          "sourceUrl": "https://www.consilium.europa.eu/en/policies/russia-ukraine/",
+          "sourceDate": "2022-02-24"
+        }
+      ]
+    },
     {
       "id": "005",
       "title": "Examen 005",
