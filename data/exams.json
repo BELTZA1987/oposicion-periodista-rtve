@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-01T13:54:10.870008+02:00",
+  "updatedAt": "2026-08-03T18:09:20.941038+02:00",
   "exams": [
+    {
+      "id": "007",
+      "title": "Examen 007",
+      "date": "2026-08-03",
+      "level": "Alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-08-03",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "¿En qué ciudad se instaló una barrera marítima tras la avalancha fronteriza del 1 de agosto de 2026?",
+          "options": [
+            "Melilla.",
+            "Ceuta.",
+            "Algeciras.",
+            "Tarifa."
+          ],
+          "correctIndex": 1,
+          "explanation": "AP informó que el 1 de agosto de 2026 España instaló una barrera marítima en la frontera de Ceuta tras la entrada masiva procedente de Marruecos; Ceuta es la ciudad indicada en la cobertura (AP, 01/08/2026).",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "AP News — Spain installs sea barrier on Ceuta's border with Morocco after frontier rush that killed 67",
+          "sourceUrl": "https://apnews.com/article/d76c6dc9d2da828907a1c04e1d482bbe",
+          "sourceDate": "2026-08-01"
+        },
+        {
+          "prompt": "Según el AI Act, ¿qué tipo de modelos comienza a tener obligaciones específicas y sanciones desde el 2 de agosto de 2026?",
+          "options": [
+            "Modelos exclusivos de visión por ordenador.",
+            "Modelos de alto riesgo.",
+            "Modelos de aprendizaje federado.",
+            "Modelos de propósito general (GPAI)."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier señala que las obligaciones y el régimen sancionador aplicable a proveedores de modelos de propósito general (GPAI) entran en aplicación el 2 de agosto de 2026 según el AI Act (Reg. 2024/1689, artículos citados).",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "AI Act (Regulation (EU) 2024/1689) — Article 113 / AI Act Service Desk",
+          "sourceUrl": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113",
+          "sourceDate": "2024-06-13"
+        },
+        {
+          "prompt": "Según la Ley 17/2006, ¿qué norma regula la radio y la televisión de titularidad estatal?",
+          "options": [
+            "Ley 13/2022, de 7 de julio.",
+            "Ley 8/2009, de 28 de agosto.",
+            "Real Decreto‑ley 4/2018, de 22 de junio.",
+            "Ley 17/2006, de 5 de junio."
+          ],
+          "correctIndex": 3,
+          "explanation": "El texto consolidado en el BOE identifica la Ley 17/2006 como la norma que regula la radio y televisión de titularidad estatal; las otras opciones son leyes o normas relativas a financiación, designación y comunicación audiovisual pero no la ley básica de la Corporación (BOE).",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 17/2006, de 5 de junio (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-9958&p=20240802&tn=1",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "¿Quién ocupa actualmente la Presidencia del Consejo Europeo?",
+          "options": [
+            "Roberta Metsola.",
+            "Ursula von der Leyen.",
+            "António Costa.",
+            "Charles Michel."
+          ],
+          "correctIndex": 2,
+          "explanation": "La verificación del dossier indica que António Costa ejerce la Presidencia del Consejo Europeo desde el 1 de diciembre de 2024 (Consilium, ficha institucional).",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "Consilium — Presidencia del Consejo Europeo",
+          "sourceUrl": "https://www.consilium.europa.eu/en/european-council/former-euco-presidents/",
+          "sourceDate": "2024-12-01"
+        },
+        {
+          "prompt": "¿Qué organismo meteorológico emitió avisos por ola de calor y riesgo de incendios a finales de julio de 2026?",
+          "options": [
+            "European Centre for Medium‑Range Weather Forecasts.",
+            "Météo‑France.",
+            "Met Office.",
+            "Agencia Estatal de Meteorología (AEMET)."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier recoge comunicados oficiales y cobertura de agencias que citan a AEMET y a la Secretaría General de Protección Civil activando avisos por ola de calor y riesgo de incendios en España (AEMET es la agencia meteorológica nacional).",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Europa Press / resúmenes de comunicados de AEMET y Protección Civil (julio 2026)",
+          "sourceUrl": "https://www.europapress.es/sociedad/noticia-ultima-hora-incendios-forestales-espana-directo-focos-activos-zonas-afectadas-evacuaciones-20260724081326.html",
+          "sourceDate": "2026-07-24"
+        },
+        {
+          "prompt": "¿En qué fecha comenzaron a aplicarse las facultades sancionadoras del AI Act respecto a los GPAI?",
+          "options": [
+            "15 de junio de 2025.",
+            "1 de enero de 2026.",
+            "2 de agosto de 2026.",
+            "1 de enero de 2024."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier documenta que ciertas obligaciones y las facultades sancionadoras relativas a modelos de propósito general (GPAI) se aplicaron conforme al calendario del AI Act a partir del 2 de agosto de 2026 (artículos especificados en la documentación del Act).",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "AI Act — Article 101 (comentario / AI Act resources)",
+          "sourceUrl": "https://artificialintelligenceact.eu/article/101/",
+          "sourceDate": "2026-08-02"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué tema exige protección específica en los contenidos informativos?",
+          "options": [
+            "Formación de presentadores.",
+            "Publicidad comercial.",
+            "Publicidad institucional.",
+            "Infancia."
+          ],
+          "correctIndex": 3,
+          "explanation": "El Manual de Estilo de RTVE incluye capítulos con pautas obligatorias sobre protección de la infancia y tratamiento informativo de menores; las otras opciones no son capítulos señalados como protección específica en el dossier del Manual.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo de RTVE — portal oficial",
+          "sourceUrl": "https://www.rtve.es/manual-de-estilo",
+          "sourceDate": "2026-07-XX"
+        },
+        {
+          "prompt": "¿Cuántos fallecidos comunicó el Gobierno relacionados con la avalancha fronteriza en Ceuta, según AP?",
+          "options": [
+            "0.",
+            "10.",
+            "120.",
+            "67."
+          ],
+          "correctIndex": 3,
+          "explanation": "AP informó que el Gobierno comunicó 67 fallecidos relacionados con la avalancha en Ceuta entre el 30 de julio y el 1 de agosto de 2026; esa cifra figura en la cobertura citada en el dossier.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "conflict",
+          "sourceTitle": "AP News — Spain installs sea barrier on Ceuta's border with Morocco after frontier rush that killed 67",
+          "sourceUrl": "https://apnews.com/article/d76c6dc9d2da828907a1c04e1d482bbe",
+          "sourceDate": "2026-08-01"
+        },
+        {
+          "prompt": "¿Qué Secretaría general activó avisos y recomendaciones sanitarias por la ola de calor a finales de julio de 2026?",
+          "options": [
+            "Secretaría General de Transportes.",
+            "Secretaría General de Pesca.",
+            "Secretaría General de Protección Civil.",
+            "Secretaría General de Educación."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier recoge que la Secretaría General de Protección Civil, junto con AEMET, emitió avisos por ola de calor y alto riesgo de incendios, activando recomendaciones sanitarias y protocolos de protección civil.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Europa Press / comunicados de AEMET y Protección Civil (julio 2026)",
+          "sourceUrl": "https://www.europapress.es/sociedad/noticia-ultima-hora-incendios-forestales-espana-directo-focos-activos-zonas-afectadas-evacuaciones-20260724081326.html",
+          "sourceDate": "2026-07-24"
+        },
+        {
+          "prompt": "Según el Real Decreto‑ley 4/2018, ¿a qué se refiere expresamente la norma?",
+          "options": [
+            "Al régimen de designación del Consejo de Administración de RTVE y su presidente.",
+            "Al sistema de financiación de la Corporación RTVE.",
+            "A las obligaciones de Protección Civil en emergencias.",
+            "A la regulación de los modelos GPAI en la UE."
+          ],
+          "correctIndex": 0,
+          "explanation": "El Real Decreto‑ley 4/2018 concretó el régimen jurídico aplicable a la designación del Consejo de Administración de la Corporación RTVE y de su presidente, como recoge el BOE y el dossier.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Real Decreto‑ley 4/2018 (22/06/2018)",
+          "sourceUrl": "https://boe.es/buscar/act.php?id=BOE-A-2018-8577",
+          "sourceDate": "2018-06-22"
+        },
+        {
+          "prompt": "Según Consilium, ¿quién ejerce la Presidencia del Consejo Europeo desde el 1 de diciembre de 2024?",
+          "options": [
+            "Manfred Weber.",
+            "António Costa.",
+            "Christine Lagarde.",
+            "Věra Jourová."
+          ],
+          "correctIndex": 1,
+          "explanation": "La página institucional del Consilium y la documentación del dossier confirman que António Costa asumió la Presidencia del Consejo Europeo el 1 de diciembre de 2024.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "Consilium — Presidencia del Consejo Europeo",
+          "sourceUrl": "https://www.consilium.europa.eu/en/european-council/former-euco-presidents/",
+          "sourceDate": "2024-12-01"
+        },
+        {
+          "prompt": "Según la Ley 31/1995, ¿qué derecho tiene la persona trabajadora ante un riesgo grave e inminente?",
+          "options": [
+            "Exigir la reducción inmediata de jornada.",
+            "Suspender la actividad y abandonar el puesto de trabajo.",
+            "Solicitar una indemnización automática.",
+            "Designar al responsable de recursos humanos."
+          ],
+          "correctIndex": 1,
+          "explanation": "La Ley 31/1995 reconoce el derecho de la persona trabajadora a la suspensión de la actividad y, si procede, al abandono del puesto ante un riesgo grave e inminente; es una previsión básica de PRL recogida en el BOE y el temario.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE — Ley 31/1995, de Prevención de Riesgos Laborales",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "¿En qué prefectura japonesa ocurrió el seísmo del 28 de julio de 2026 de magnitud alrededor de 7,1?",
+          "options": [
+            "Kumamoto.",
+            "Miyagi.",
+            "Hokkaido.",
+            "Shizuoka."
+          ],
+          "correctIndex": 0,
+          "explanation": "La cobertura de AP y la Japan Meteorological Agency citadas en el dossier sitúan el seísmo del 28 de julio de 2026 en la prefectura de Kumamoto (isla de Kyushu).",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "recent_event",
+          "sourceTitle": "AP News — A 7.1 magnitude quake hits Japan's southern Kyushu island killing at least 3",
+          "sourceUrl": "https://apnews.com/article/09e6f40acbcc96053946c9c104e7a242",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "¿Qué consecuencia principal atribuye el dossier a la ola de calor y los incendios de julio de 2026?",
+          "options": [
+            "Acumulación de presión sobre servicios sanitarios y cuerpos de extinción.",
+            "Aumento inmediato y generalizado del empleo en las zonas afectadas.",
+            "Subida notable del turismo interior durante la crisis.",
+            "Rebaja de la deuda pública en las comunidades afectadas."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier subraya impactos en movilidad, salud pública y recursos de extinción, destacando la presión acumulada sobre servicios sanitarios y cuerpos de extinción como consecuencia de la ola de calor e incendios (fuentes oficiales y agencias).",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "economy",
+          "sourceTitle": "Europa Press / análisis sobre impactos de incendios y olas de calor (julio 2026)",
+          "sourceUrl": "https://www.europapress.es/sociedad/noticia-ultima-hora-incendios-forestales-espana-directo-focos-activos-zonas-afectadas-evacuaciones-20260724081326.html",
+          "sourceDate": "2026-07-24"
+        },
+        {
+          "prompt": "¿Qué servicio europeo proporciona productos de 'Rapid Mapping' para emergencias como incendios y terremotos?",
+          "options": [
+            "Galileo Emergency Response Service.",
+            "Copernicus Emergency Management Service (CEMS).",
+            "European Space Agency Climate Office.",
+            "EU Meteorological Rapid Response Service."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier indica que el Servicio de Gestión de Emergencias Copernicus (CEMS) ofrece productos de 'Rapid Mapping' para apoyar la respuesta ante incendios, terremotos y otras emergencias; esa es la función documentada oficialmente.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Copernicus Emergency Management Service (CEMS) — documentación oficial",
+          "sourceUrl": "https://www.copernicus.eu/en/copernicus-documents-library/enhancing-emergency-response-copernicus-emergency-management-service",
+          "sourceDate": "2019-01-14"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué obligación debe cumplir el profesional en los informativos?",
+          "options": [
+            "Difundir primicias sin verificar para ser rápidos.",
+            "Priorizar opiniones de colaboradores sin contraste.",
+            "Ofrecer información veraz, contrastada y de interés público.",
+            "Evitar rectificaciones aunque se detecten errores."
+          ],
+          "correctIndex": 2,
+          "explanation": "El Manual de Estilo de RTVE establece como obligación ofrecer información veraz y contrastada; las otras opciones contradicen principios expresados en las guías oficiales recogidas en el dossier.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE — secciones sobre obligaciones informativas",
+          "sourceUrl": "https://manualdeestilo.rtve.es/tve/",
+          "sourceDate": "2026-07-XX"
+        },
+        {
+          "prompt": "En el contexto de los últimos cinco años, ¿qué suceso iniciado el 24 de febrero de 2022 condiciona la agenda europea de seguridad?",
+          "options": [
+            "La crisis migratoria en el Mediterráneo de 2015.",
+            "La invasión rusa de Ucrania.",
+            "El Brexit.",
+            "El acuerdo nuclear con Irán."
+          ],
+          "correctIndex": 1,
+          "explanation": "El dossier identifica la invasión rusa de Ucrania, iniciada el 24 de febrero de 2022, como un hito que condiciona la agenda europea de seguridad y las medidas adoptadas por la UE desde entonces (documentos del Consilium y del EEAS).",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Consilium — comunicados y cronología sobre la respuesta de la UE (febrero 2022)",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2022/02/28/eu-adopts-new-set-of-measures-to-respond-to-russia-s-military-aggression-against-ukraine/pdf/",
+          "sourceDate": "2022-02-24"
+        },
+        {
+          "prompt": "¿Quién figura como Presidente del Gobierno de España en la verificación institucional del dossier?",
+          "options": [
+            "Pedro Sánchez.",
+            "Alberto Núñez Feijóo.",
+            "Pablo Casado.",
+            "Pedro Fdez. Díaz."
+          ],
+          "correctIndex": 0,
+          "explanation": "La verificación institucional incluida en el dossier indica que Pedro Sánchez figura como Presidente del Gobierno de España en la web oficial de La Moncloa (consultada el 03/08/2026).",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "office_holder",
+          "sourceTitle": "La Moncloa — biografía e intervenciones del Presidente del Gobierno",
+          "sourceUrl": "https://www.lamoncloa.gob.es/Paginas/index.aspx",
+          "sourceDate": "2026-08-03"
+        },
+        {
+          "prompt": "Según el BOE, ¿qué ley regula específicamente la financiación de la Corporación RTVE?",
+          "options": [
+            "Ley 8/2009, de 28 de agosto.",
+            "Ley 17/2006, de 5 de junio.",
+            "Ley 5/2017, de 29 de septiembre.",
+            "Ley 13/2022, de 7 de julio."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier remite al texto oficial del BOE que establece que la Ley 8/2009, de 28 de agosto, regula el sistema de financiación de la Corporación de Radio y Televisión Española.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 8/2009, de 28 de agosto, de financiación de la Corporación de Radio y Televisión Española",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-13988",
+          "sourceDate": "2009-08-28"
+        },
+        {
+          "prompt": "En los últimos cinco años, ¿qué paquete de normas de la UE ha transformado la regulación de plataformas digitales?",
+          "options": [
+            "Markets in Crypto‑Assets (MiCA); DSA; NIS2.",
+            "Reglamento ePrivacy; DSA; Reglamento de Aeronáutica.",
+            "Digital Services Act (DSA); Digital Markets Act (DMA); AI Act.",
+            "GDPR; Common Agricultural Policy; Schengen Acquis."
+          ],
+          "correctIndex": 2,
+          "explanation": "El dossier expone que DSA, DMA y el AI Act son las normas aprobadas en los últimos años que han transformado la supervisión de plataformas digitales en la UE; las demás opciones mezclan normas no pertinentes o antiguas.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "economy",
+          "sourceTitle": "European Commission / EUR‑Lex — DSA, DMA y AI Act (documentos regulatorios oficiales)",
+          "sourceUrl": "https://eur-lex.europa.eu/",
+          "sourceDate": "2024-07-12"
+        }
+      ]
+    },
     {
       "id": "006",
       "title": "Examen 006",
