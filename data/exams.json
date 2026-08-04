@@ -1,7 +1,368 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-03T18:09:20.941038+02:00",
+  "updatedAt": "2026-08-04T15:24:31.937315+02:00",
   "exams": [
+    {
+      "id": "008",
+      "title": "Examen 008",
+      "date": "2026-08-04",
+      "level": "Alto",
+      "timeMinutes": 30,
+      "currentAffairsCutoff": "2026-08-04",
+      "blocks": [
+        "Actualidad España",
+        "Actualidad internacional",
+        "Unión Europea e instituciones",
+        "Economía y sociedad",
+        "Cultura, ciencia y deporte",
+        "RTVE y legislación audiovisual",
+        "Manual de Estilo, ética e igualdad",
+        "Prevención de riesgos laborales",
+        "Conflictos, justicia y seguridad"
+      ],
+      "questions": [
+        {
+          "prompt": "¿Qué medida anunció el Gobierno en el Consejo de Ministros tras la oleada de incendios a finales de julio de 2026?",
+          "options": [
+            "La disolución del Ministerio para la Transición Ecológica.",
+            "La declaración del estado de alarma para las comunidades afectadas.",
+            "La convocatoria inmediata de un fondo europeo de reconstrucción.",
+            "La tramitación de un real decreto‑ley para declarar zonas gravemente afectadas por emergencias de protección civil."
+          ],
+          "correctIndex": 3,
+          "explanation": "La Moncloa informó que el Gobierno acordó tramitar un real decreto‑ley para declarar 'zonas gravemente afectadas por emergencias de protección civil' y activar ayudas extraordinarias (comunicado La Moncloa, 26–28 julio 2026). Las otras opciones no corresponden al anuncio oficial citado.",
+          "category": "Actualidad España",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "La Moncloa — declaraciones del Presidente y comunicados oficiales",
+          "sourceUrl": "https://www.lamoncloa.gob.es/presidente/intervenciones/paginas/2026/20260726-sanchez-declaracion-instit-incendio-avila.aspx",
+          "sourceDate": "2026-07-26"
+        },
+        {
+          "prompt": "¿Qué país sufrió un seísmo de magnitud aproximada 7,1 el 28 de julio de 2026?",
+          "options": [
+            "Indonesia.",
+            "Filipinas.",
+            "Japón.",
+            "Chile."
+          ],
+          "correctIndex": 2,
+          "explanation": "Agencias internacionales (Reuters, AP) informaron del seísmo en el sur de Japón (región de Kyushu, prefectura de Kumamoto) del 28/07/2026. Los demás países no se corresponden con el evento citado.",
+          "category": "Actualidad internacional",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "Reuters / AP / NHK (cobertura del seísmo 28/07/2026)",
+          "sourceUrl": "https://www.reuters.com/world/asia-pacific/",
+          "sourceDate": "2026-07-28"
+        },
+        {
+          "prompt": "Según la Ley 17/2006, de 5 de junio, ¿qué instrumento fija objetivos y aportaciones anuales entre el Gobierno y la Corporación RTVE?",
+          "options": [
+            "El reglamento interno.",
+            "El mandato‑marco.",
+            "El convenio laboral.",
+            "La orden ministerial."
+          ],
+          "correctIndex": 1,
+          "explanation": "El texto consolidado de la Ley 17/2006 prevé la suscripción de un mandato‑marco y contratos‑programa que fijan objetivos y aportaciones anuales entre el Gobierno y RTVE (art. 4 y 32). Los otros términos no son el instrumento mencionado en la Ley.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 17/2006 (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-11225",
+          "sourceDate": "2006-06-05"
+        },
+        {
+          "prompt": "Según la web oficial de la Comisión Europea, ¿quién figura como Presidenta de la Comisión?",
+          "options": [
+            "Ursula von der Leyen.",
+            "Roberta Metsola.",
+            "Christine Lagarde.",
+            "Margrethe Vestager."
+          ],
+          "correctIndex": 0,
+          "explanation": "El perfil oficial de la Comisión Europea identifica a Ursula von der Leyen como Presidenta (sitio de la Comisión, verificado en la fecha de corte). Las demás opciones son altos cargos de la UE o de instituciones distintas.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Commission — President Ursula von der Leyen",
+          "sourceUrl": "https://commission.europa.eu/about/who-we-are/commissioners_en",
+          "sourceDate": "2024-12-01"
+        },
+        {
+          "prompt": "¿Qué organismo adoptó decisiones con órdenes de corrección bajo el Digital Markets Act en julio de 2026?",
+          "options": [
+            "El Parlamento Europeo.",
+            "La Comisión Europea.",
+            "El Tribunal de Justicia de la Unión Europea.",
+            "El Consejo de la Unión Europea."
+          ],
+          "correctIndex": 1,
+          "explanation": "La Comisión adoptó decisiones de aplicación y órdenes de corrección en julio de 2026 bajo el régimen del DMA, según los comunicados oficiales de la Comisión. Los otros órganos no adoptaron esas decisiones de ejecución DMA en ese contexto.",
+          "category": "Economía y sociedad",
+          "freshness": "7d",
+          "topicType": "economy",
+          "sourceTitle": "European Commission — press releases on DMA enforcement (July 2026)",
+          "sourceUrl": "https://ec.europa.eu/commission/presscorner/home/en",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "¿Qué servicio europeo proporciona productos de 'Rapid Mapping' para apoyo inmediato en incendios y terremotos?",
+          "options": [
+            "European Forest Fire Information System (EFFIS).",
+            "Copernicus Emergency Management Service (CEMS).",
+            "European Space Agency Rapid Response.",
+            "Joint Research Centre Hazard Unit."
+          ],
+          "correctIndex": 1,
+          "explanation": "El Servicio de Gestión de Emergencias Copernicus (CEMS) ofrece productos de Rapid Mapping para apoyo inmediato en incendios, terremotos y otras emergencias; EFFIS es un servicio de vigilancia de incendios, pero CEMS es el proveedor de mapas rápidos (documentación oficial).",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Copernicus Emergency Management Service — Rapid Mapping (documentación oficial)",
+          "sourceUrl": "https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery",
+          "sourceDate": "2019-01-14"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué obligación figura entre las del informador?",
+          "options": [
+            "Publicar primicias sin verificación si son relevantes.",
+            "ContrastAR fuentes e identificar el origen de la información.",
+            "Priorizar informaciones anónimas sobre oficiales.",
+            "Reservar la identificación de fuentes en conflictos."
+          ],
+          "correctIndex": 1,
+          "explanation": "El Manual de Estilo de RTVE exige veracidad y diligencia: contrastar fuentes e identificar el origen. Las otras opciones contradicen las pautas de verificación del Manual.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE (principios y pautas para informadores)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/",
+          "sourceDate": "2024-01-01"
+        },
+        {
+          "prompt": "¿En qué provincia se declaró el gran incendio que obligó a desalojar a decenas de miles de personas a finales de julio de 2026?",
+          "options": [
+            "Girona.",
+            "Ávila.",
+            "Toledo.",
+            "Castellón."
+          ],
+          "correctIndex": 3,
+          "explanation": "El incendio referido en el dossier afectó a La Vall d'Uixó, en la provincia de Castellón, y obligó a desalojos masivos según EFE y notas de La Moncloa. Las otras provincias listadas no corresponden al episodio citado.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "72h",
+          "topicType": "recent_event",
+          "sourceTitle": "EFE; La Moncloa (comunicado y visita del Presidente)",
+          "sourceUrl": "https://efe.com/espana/2026-07-26/evolucion-incendio-castellon/; https://www.lamoncloa.gob.es/presidente/intervenciones/paginas/2026/20260727-sanchez-visita-pma-incendio-castellon.aspx",
+          "sourceDate": "2026-07-26"
+        },
+        {
+          "prompt": "¿Cuál fue la superficie quemada provisional comunicada por el Ministerio para la Transición Ecológica a 25 de julio de 2026?",
+          "options": [
+            "50.000 hectáreas.",
+            "24.133 hectáreas.",
+            "125.937 hectáreas.",
+            "300.000 hectáreas."
+          ],
+          "correctIndex": 2,
+          "explanation": "Según datos provisionales citados por EFE del MITECO a 25/07/2026, la superficie quemada en 2026 superaba las 125.937 ha. La cifra de 24.133 ha corresponde al mismo periodo del año anterior en la comparación interanual.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "EFE citando datos del Ministerio para la Transición Ecológica (MITECO)",
+          "sourceUrl": "https://efe.com/medio-ambiente/superficie-quemada-incendios-2026-espana/",
+          "sourceDate": "2026-07-25"
+        },
+        {
+          "prompt": "Según la Ley 8/2009, de 28 de agosto, la norma regula:",
+          "options": [
+            "La financiación de la Corporación de Radio y Televisión Española.",
+            "La estructura organizativa del Consejo de Administración de RTVE.",
+            "Las franjas horarias de protección para menores.",
+            "Los códigos de autorregulación sobre publicidad."
+          ],
+          "correctIndex": 0,
+          "explanation": "La Ley 8/2009 regula el sistema de financiación de la Corporación RTVE. Las otras materias pertenecen a ámbitos normativos distintos o a reglamentación interna y no son el objeto principal de la Ley 8/2009.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Ley 8/2009, de financiación de la Corporación RTVE",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-13988",
+          "sourceDate": "2009-08-28"
+        },
+        {
+          "prompt": "Según la página oficial del Consejo Europeo, ¿quién figura como Presidente del Consejo Europeo?",
+          "options": [
+            "Josep Borrell.",
+            "Ursula von der Leyen.",
+            "Roberta Metsola.",
+            "Charles Michel."
+          ],
+          "correctIndex": 3,
+          "explanation": "El perfil oficial del Consejo Europeo identifica a Charles Michel como Presidente (sitio del Consilium, verificado en la fecha de corte). Von der Leyen es Presidenta de la Comisión; las demás opciones ocupan o han ocupado otros cargos.",
+          "category": "Unión Europea e instituciones",
+          "freshness": "current",
+          "topicType": "office_holder",
+          "sourceTitle": "European Council — President Charles Michel",
+          "sourceUrl": "https://www.consilium.europa.eu/en/european-council/president/",
+          "sourceDate": "2024-12-01"
+        },
+        {
+          "prompt": "Según la Ley 31/1995, de Prevención de Riesgos Laborales, ¿qué derecho tiene la persona trabajadora ante un riesgo grave e inminente?",
+          "options": [
+            "Solicitar un cambio contractual a jornada reducida.",
+            "Exigir la prestación inmediata de incapacidad temporal.",
+            "Interrumpir su actividad y abandonar el lugar de trabajo.",
+            "Designar al responsable de seguridad de la empresa."
+          ],
+          "correctIndex": 2,
+          "explanation": "El artículo citado de la Ley 31/1995 reconoce el derecho de la persona trabajadora a interrumpir su actividad y abandonar el lugar de trabajo cuando exista un riesgo grave e inminente. Las otras opciones no reflejan ese derecho legal específico.",
+          "category": "Prevención de riesgos laborales",
+          "freshness": "static",
+          "topicType": "prl",
+          "sourceTitle": "BOE — Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales (texto consolidado)",
+          "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+          "sourceDate": "1995-11-08"
+        },
+        {
+          "prompt": "¿Qué organismo adoptó el 23 de julio de 2026 el vigésimo primer paquete de sanciones dirigido a Rusia?",
+          "options": [
+            "La Comisión Europea.",
+            "El Consejo de la Unión Europea.",
+            "La OTAN.",
+            "El Parlamento Europeo."
+          ],
+          "correctIndex": 1,
+          "explanation": "El comunicado oficial del Consilium recoge que fue el Consejo de la Unión Europea el que adoptó el 23/07/2026 el vigésimo primer paquete de sanciones contra Rusia. Las otras instituciones no adoptaron ese paquete en esa fecha.",
+          "category": "Actualidad internacional",
+          "freshness": "7d",
+          "topicType": "politics",
+          "sourceTitle": "Council of the European Union (Consilium) — comunicado sobre paquete de sanciones 23/07/2026",
+          "sourceUrl": "https://www.consilium.europa.eu/en/press/",
+          "sourceDate": "2026-07-23"
+        },
+        {
+          "prompt": "Según la documentación de la Comisión Europea, ¿qué reglamento establece obligaciones escalonadas y plazos de aplicación para distintos tipos de sistemas de inteligencia artificial en la UE?",
+          "options": [
+            "El AI Act.",
+            "El GDPR.",
+            "El Digital Services Act.",
+            "El Digital Markets Act."
+          ],
+          "correctIndex": 0,
+          "explanation": "La documentación oficial de la Comisión describe el AI Act como el reglamento que establece obligaciones escalonadas y fases de aplicación para distintos sistemas de IA; GDPR y las Acts digitales tratan aspectos distintos.",
+          "category": "Economía y sociedad",
+          "freshness": "30d",
+          "topicType": "science",
+          "sourceTitle": "European Commission — AI Act implementation pages; EU AI Board communications",
+          "sourceUrl": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+          "sourceDate": "2026-06-11"
+        },
+        {
+          "prompt": "¿Qué sensores Sentinel se emplean frecuentemente en los productos de delineación y valoración de daños por incendios del Copernicus EMS?",
+          "options": [
+            "Sentinel‑1 (SAR) y Sentinel‑3 (radar).",
+            "Sentinel‑3 (óptico) y Sentinel‑5P (atmósfera).",
+            "Sentinel‑2 (óptico) y Sentinel‑1 (SAR).",
+            "Sentinel‑2 (óptico) y Sentinel‑5P (atmósfera)."
+          ],
+          "correctIndex": 2,
+          "explanation": "La documentación técnica y manuales del EMS y trabajos del JRC describen el uso conjunto habitual de Sentinel‑2 (óptico) y Sentinel‑1 (SAR) para delineación y valoración de daños en incendios; las otras combinaciones no reflejan la práctica citada.",
+          "category": "Cultura, ciencia y deporte",
+          "freshness": "72h",
+          "topicType": "science",
+          "sourceTitle": "Copernicus EMS documentation; JRC research (aplicación de Sentinel‑1/2 en delineación de quemas)",
+          "sourceUrl": "https://emergency.copernicus.eu/mapping/sites/default/files/citations/JRCTechnicalReport_2020_Manual%20for%20Rapid%20Mapping%20Products_final.pdf",
+          "sourceDate": "2020-01-01"
+        },
+        {
+          "prompt": "Según el Manual de Estilo de RTVE, ¿qué apartado incluye pautas obligatorias para el tratamiento de la infancia y franjas de protección?",
+          "options": [
+            "'Normas de producción'.",
+            "'Criterios informativos generales'.",
+            "'Cuestiones sensibles'.",
+            "'Sección de opinión'."
+          ],
+          "correctIndex": 2,
+          "explanation": "El Manual de Estilo de RTVE contiene un capítulo titulado 'Cuestiones sensibles' con pautas obligatorias sobre infancia, franjas de protección y menores. Las otras secciones no son el capítulo citado.",
+          "category": "Manual de Estilo, ética e igualdad",
+          "freshness": "static",
+          "topicType": "ethics",
+          "sourceTitle": "Manual de Estilo RTVE — sección 'Cuestiones sensibles' (sitio oficial del Manual)",
+          "sourceUrl": "https://manualdeestilo.rtve.es/cuestiones-sensibles/",
+          "sourceDate": "2024-01-01"
+        },
+        {
+          "prompt": "En el contexto de los últimos cinco años, ¿qué suceso iniciado el 24 de febrero de 2022 ha condicionado la agenda europea de seguridad?",
+          "options": [
+            "La invasión rusa de Ucrania.",
+            "La pandemia de COVID‑19.",
+            "La crisis migratoria de 2015.",
+            "El proceso del Brexit."
+          ],
+          "correctIndex": 0,
+          "explanation": "El dossier y comunicaciones oficiales indican que la agresión iniciada por Rusia el 24/02/2022 ha sido un factor estructural que condiciona la agenda europea de seguridad, sanciones y defensa. Las otras opciones son hechos relevantes de otras épocas o ámbitos.",
+          "category": "Conflictos, justicia y seguridad",
+          "freshness": "5y",
+          "topicType": "conflict",
+          "sourceTitle": "Agencias internacionales y documentos de la UE (resúmenes oficiales y decisiones de sanciones)",
+          "sourceUrl": "https://www.consilium.europa.eu/en/policies/sanctions/ukraine-crisis/",
+          "sourceDate": "2022-02-24"
+        },
+        {
+          "prompt": "¿Qué tipo de medidas difundieron autoridades sanitarias autonómicas y la Secretaría General de Sanidad a finales de julio de 2026 por la ola de calor?",
+          "options": [
+            "Avisos y recomendaciones para la población vulnerable.",
+            "Cierres obligatorios de centros turísticos.",
+            "Prohibición de actividades deportivas al aire libre permanentemente.",
+            "Cuarentenas para personas con enfermedades crónicas."
+          ],
+          "correctIndex": 0,
+          "explanation": "A finales de julio de 2026 las autoridades sanitarias y la Secretaría General de Sanidad activaron avisos y recomendaciones sanitarias para población vulnerable ante la ola de calor; las otras medidas no fueron las difundidas según los comunicados citados.",
+          "category": "Actualidad España",
+          "freshness": "7d",
+          "topicType": "society",
+          "sourceTitle": "Comunicados autonómicos y del Ministerio de Sanidad (cobertura de EFE/RTVE)",
+          "sourceUrl": "https://www.mscbs.gob.es/",
+          "sourceDate": "2026-07-29"
+        },
+        {
+          "prompt": "Real Decreto‑ley 4/2018, de 22 de junio, regula expresamente:",
+          "options": [
+            "La estructura de los servicios informativos de RTVE.",
+            "El sistema de financiación de la Corporación RTVE.",
+            "Las franjas de protección para la emisión de contenidos infantiles.",
+            "El régimen jurídico aplicable a la designación del Consejo de Administración de la Corporación RTVE y de su Presidente."
+          ],
+          "correctIndex": 3,
+          "explanation": "El RDL 4/2018 concretó con carácter urgente el régimen jurídico para la designación del Consejo de Administración de RTVE y de su Presidente; las demás materias corresponden a otras normas o ámbitos.",
+          "category": "RTVE y legislación audiovisual",
+          "freshness": "static",
+          "topicType": "law_rtve",
+          "sourceTitle": "BOE — Real Decreto‑ley 4/2018",
+          "sourceUrl": "https://www.boe.es/eli/es/rdl/2018/06/22/4",
+          "sourceDate": "2018-06-22"
+        },
+        {
+          "prompt": "En el contexto de los últimos cinco años, ¿qué conjunto normativo de la UE ha transformado la regulación de las plataformas digitales?",
+          "options": [
+            "La Convención de la ONU sobre Comercio Digital.",
+            "El Reglamento AI Act únicamente.",
+            "La Directiva de Servicios Audiovisuales únicamente.",
+            "El paquete Digital Services Act (DSA) y Digital Markets Act (DMA)."
+          ],
+          "correctIndex": 3,
+          "explanation": "El dossier y la documentación de la Comisión señalan que la DSA y el DMA constituyen el paquete normativo que ha transformado la regulación de plataformas digitales en la UE durante los últimos años; las otras opciones no reflejan ese paquete integral.",
+          "category": "Actualidad internacional",
+          "freshness": "5y",
+          "topicType": "politics",
+          "sourceTitle": "European Commission — DSA/DMA pages; textos legislativos comunitarios",
+          "sourceUrl": "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package",
+          "sourceDate": "2022-11-16"
+        }
+      ]
+    },
     {
       "id": "007",
       "title": "Examen 007",
